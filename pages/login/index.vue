@@ -1,16 +1,6 @@
 <template>
     <div class="login">
-        <div class="login_header">
-            <div class="container-fluid">
-                <b-row>
-                    <b-col md="12">
-                        <div class="login_header_logo">
-                            <img src="~/assets/images/logo/logo-pnom.png" alt="logo">
-                        </div>
-                    </b-col>
-                </b-row>
-            </div>
-        </div>
+       <header-login/>
         <div class="login_content">
             <div class="container">
                 <b-row>
@@ -22,10 +12,9 @@
                                         <div class="pnom-form_header">
                                             <div class="title p-blue-9 text-center">masuk</div>
                                             <div class="sub-title">
-                                                Belum punya akun <router-link to="#">Daftar</router-link>
+                                                Belum punya akun <router-link to="/daftar">Daftar</router-link>
                                             </div>
                                         </div>
-                                        
                                     </b-col>
                                     <b-col md="12">
                                         <div class="pnom-form_content">
@@ -37,11 +26,11 @@
                                                 <label for="">Password: </label>
                                                 <b-form-input placeholder="Enter your name"/>
                                             </div>
-                                            <div class="forgot-password text-right mt-2 mb-2">
+                                            <div class="forgot-password text-right mt-2">
                                                 <router-link to="#">Lupa Password</router-link>
                                             </div>
 
-                                              <b-button variant="primary" class="btn-pnom-primary w-100">MASUK</b-button>
+                                            <b-button variant="primary" class="btn-pnom-primary w-100">MASUK</b-button>
                                         </div>
                                     </b-col>
                                 </b-row>
@@ -51,19 +40,7 @@
                 </b-row>
             </div>
         </div>
-        <div class="login_footer">
-            <div class="container-fluid">
-                <b-row>
-                    <b-col md="12">
-                        <div class="login_footer_content">
-                            <h4 class="name">&copy; 2023, PNOMSTICKLITE</h4>
-                            <div class="devider">|</div>
-                            <h4 class="menu">Bantuan</h4>
-                        </div>
-                    </b-col>
-                </b-row>
-            </div>
-        </div>
+        <footer-login/>
     </div>
 </template>
 

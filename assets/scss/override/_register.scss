@@ -1,0 +1,65 @@
+.register {
+    
+    &_content {
+        width: 100%;
+        margin-bottom: 100px;
+
+        .background-register {
+            width: 100%;
+            height: 100vh;
+            background-image: url('~/assets/images/background/bg-pnom.png');
+            background-size: 70% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .section_register_form {
+            width: 480px;
+            height: auto;
+            border-radius: 30px;
+            background-color: $white;
+            opacity: 0.8;
+            padding: 30px;
+            box-shadow: 10px 11px 22px -4px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 10px 11px 22px -4px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 11px 22px -4px rgba(0,0,0,0.75);
+            margin-top: 100px;
+            
+            .pnom-form_header {
+                .title {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 32px;
+                }
+
+                .sub-title {
+                    text-transform: capitalize;
+                    font-size: 18px;
+                    a {
+                        color: $blue-9;
+                        font-size: 18px;
+                        font-weight: 300;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .pnom-form_content {
+                label {
+                    font-size: 14px;
+                    color: $black-10;
+                }
+
+                .href-data {
+                    color: $blue-9;
+                    font-weight: bold;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
