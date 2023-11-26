@@ -3,9 +3,9 @@
         <div class="container-fluid">
             <b-row>
                 <b-col md="12">
-                    <div class="login_header_logo">
+                    <router-link to="/" class="login_header_logo">
                         <img src="~/assets/images/logo/logo-pnom.png" alt="logo">
-                    </div>
+                    </router-link>
                 </b-col>
             </b-row>
         </div>
