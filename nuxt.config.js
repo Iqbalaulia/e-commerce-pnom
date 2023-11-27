@@ -25,7 +25,8 @@ export default {
   },
 
   css: [
-    '~/assets/scss/main.scss'
+    '~/assets/scss/main.scss',
+    '@fortawesome/fontawesome-free/css/all.css',
   ],
 
   plugins: [

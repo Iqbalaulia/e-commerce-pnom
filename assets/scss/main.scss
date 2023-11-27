@@ -3,6 +3,9 @@
 @import './override/login';
 @import './override/register';
 
+@import './override/components/navbar';
+@import './override/components/footer';
+
 body {
     font-family: 'Poppins', sans-serif;
     -moz-transform: scale(0.8, 0.8); 

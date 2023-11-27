@@ -1,0 +1,68 @@
+.pnom-navbar {
+    
+    &_header-1 {
+        background-color: $blue-10;
+        
+        .navbar-nav {
+            .nav-item {
+                a {
+                    color: $white;
+                    font-size: 12px;
+                }
+
+                i {
+                    color: $red-9;
+                }
+            }
+        }
+    }
+
+    &_header-2 {
+        background-color: $blue-9;
+
+        .navbar-expand {
+            justify-content: space-around !important;
+        }
+
+        .logo {
+            width: 300px;
+            height: 60px;
+        }
+
+        .wishlist { 
+            i {
+                color: $white;
+            }
+
+            
+        }
+
+        .cart {
+            i {
+                color: $white;
+            }
+        }
+    }
+
+    &_header-3 {
+        background-color: $blue-10;
+
+        .navbar-collapse{
+            justify-content: center;
+        }
+
+        .navbar-nav {
+            .nav-item {
+                a {
+                    color: $white;
+                    font-size: 14px;
+                }
+
+                i {
+                    color: $red-9;
+                }
+            }
+        }
+    }
+
+}

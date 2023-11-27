@@ -1,5 +1,9 @@
 <template>
-  <Tutorial/>
+  <div>
+    <navbar/>
+    
+    <footer/>
+  </div>
 </template>
 
 <script>
