@@ -111,7 +111,9 @@
     &_header-3 {
         background-color: $blue-10;
         height: 55px;
-        
+        border-top: 1px solid $red-7;
+        border-bottom: 1px solid $red-7;
+
         .navbar-collapse{
             justify-content: center;
         }

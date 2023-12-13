@@ -1,0 +1,73 @@
+.footer {
+    background-color: $blue-9;
+    padding: 110px 165px 110px 165px;
+
+    &_about {
+        label {
+            font-size: 24px;
+            font-weight: bold;
+            color: $white;
+        }
+
+        p {
+            font-size: 16px;
+            color: $white;
+        }
+
+        .location {
+            font-size: 16px;
+            color: $white;
+            line-height: 30px;
+        }
+
+        .email {
+            font-size: 16px;
+            color: $white;
+            line-height: 30px;
+
+        }
+
+        .phone {
+            font-size: 16px;
+            color: $white;
+            line-height: 30px;
+
+        }
+    }
+
+    &_category {
+        label {
+            font-size: 24px;
+            font-weight: bold;
+            color: $white;
+        }
+    }
+
+    &_store_information {
+        label {
+            font-size: 24px;
+            font-weight: bold;
+            color: $white;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+
+            li {
+                font-size: 16px;
+                color: $white;
+                line-height: 40px;
+            }
+        }
+    }
+
+    &_maps {
+        .maps {
+            iframe {
+                height: 410px;
+                width: 100%;
+            }
+        }
+    }
+}

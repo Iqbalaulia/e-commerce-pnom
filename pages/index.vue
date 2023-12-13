@@ -1,8 +1,10 @@
 <template>
   <div>
     <navbar/>
-    
-    <footer/>
+    <div class="container">
+      123
+    </div>
+    <footer-ecoomerce/>
   </div>
 </template>
 

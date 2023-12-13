@@ -8,5 +8,5 @@ import Navbar from '~/components/navbar/index.vue';
 Vue.component('Tutorial', Tutorial);
 Vue.component('header-login', Header);
 Vue.component('footer-login', FooterLogin);
-Vue.component('footer', Footer);
+Vue.component('footer-ecoomerce', Footer);
 Vue.component('navbar', Navbar);
