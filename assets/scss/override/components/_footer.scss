@@ -70,4 +70,16 @@
             }
         }
     }
+
+}
+
+.footer_content {
+    padding: 20px 18px;
+    display: flex;
+    justify-content: center;
+
+    &_identitas {
+        font-weight: 500;
+        font-size: 18px;
+    }
 }
