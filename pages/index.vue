@@ -1,9 +1,7 @@
 <template>
   <div>
     <navbar/>
-    <div class="container">
-      123
-    </div>
+    <filter-category/>
     <footer-ecoomerce/>
   </div>
 </template>
