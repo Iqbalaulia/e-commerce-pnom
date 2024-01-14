@@ -1,5 +1,67 @@
 <template>
     <div>
+        <div class="footer-newslater">
+            <b-row>
+                <b-col md="12">
+                    <div class="footer-newslater_title">
+                        subscribe to our newsletter
+                    </div>
+                </b-col>
+            </b-row>
+            <b-row>
+                <b-col md="4">
+                    <b-form-group
+                        id="input-group-1"
+                        label="Nama Lengkap"
+                        label-for="input-1"
+                        class="label"
+                    >
+                    <b-form-input
+                      id="input-1"
+                      placeholder="Ketikan Nama Lengkap"
+                      required
+                    ></b-form-input>
+                  </b-form-group>
+                </b-col>
+                <b-col md="4">
+                    <b-form-group
+                        id="input-group-1"
+                        label="Nomor Telepon"
+                        label-for="input-1"
+                        class="label"
+                    >
+                    <b-form-input
+                      id="input-1"
+                      type="number"
+                      placeholder="Ketikan Nomor Telepon"
+                      required
+                    ></b-form-input>
+                  </b-form-group>
+                </b-col>
+                <b-col md="4">
+                    <b-form-group
+                        id="input-group-1"
+                        label="E-mail"
+                        label-for="input-1"
+                        class="label"
+                    >
+                    <b-form-input
+                      id="input-1"
+                      type="email"
+                      placeholder="Ketikan Email"
+                      required
+                    ></b-form-input>
+                  </b-form-group>
+                </b-col>
+            </b-row>
+            <b-row>
+                <b-col md="12">
+                    <div class="footer-newslater_action">
+                        <b-button class="pnom-btn-yellow">SUBSCRIBE</b-button>
+                    </div>
+                </b-col>
+            </b-row>
+        </div>
         <div class="footer">
             <b-row>
                 <b-col md="3" class="footer_about">

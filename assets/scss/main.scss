@@ -2,6 +2,7 @@
 
 @import './override/login';
 @import './override/register';
+@import './override/home';
 
 @import './override/components/navbar';
 @import './override/components/footer';
@@ -11,6 +12,9 @@
 @import './override/components/filter-new-product';
 @import './override/components/filter-recomanded';
 @import './override/components/filter-article';
+
+@import './components/button/button';
+
 
 body {
     font-family: 'Poppins', sans-serif;
