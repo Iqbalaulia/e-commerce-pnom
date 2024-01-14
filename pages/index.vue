@@ -5,7 +5,8 @@
     <filter-popular/>
     <filter-new-product/>
     <filter-recomanded/>
-    <footer-ecoomerce/>
+    <filter-article/>
+    <footer-ecommerce/>
   </div>
 </template>
 
