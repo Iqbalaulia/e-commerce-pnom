@@ -5,7 +5,9 @@
 
 @import './override/components/navbar';
 @import './override/components/footer';
+
 @import './override/components/filter-category';
+@import './override/components/filter-popular';
 
 body {
     font-family: 'Poppins', sans-serif;

@@ -136,6 +136,6 @@
 
 <script>
 export default {
-    
+    name:'FilterCategory'
 }
 </script>
