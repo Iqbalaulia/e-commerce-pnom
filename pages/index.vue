@@ -3,6 +3,8 @@
     <navbar/>
     <filter-category/>
     <filter-popular/>
+    <filter-new-product/>
+    <filter-recomanded/>
     <footer-ecoomerce/>
   </div>
 </template>

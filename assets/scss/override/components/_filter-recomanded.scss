@@ -1,0 +1,91 @@
+.pnom-filter-recomanded {
+    padding: 40px 120px 40px 120px;
+
+    &_title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .data-title {
+            display: flex;
+            align-items: center;
+
+            .devider {
+                height: 25px;
+                border-left: 8px solid $blue-9;
+                margin-right: 8px;
+                border-radius: 4px;
+            }
+    
+            label {
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 28px;
+                margin: 0;
+            }
+        }
+
+        .another-link {
+            a {
+                font-size: 24px;
+                font-weight: 400;
+                text-decoration: none;
+                text-transform: capitalize;
+                color: $black-9;
+            }
+        }
+    }
+
+    &_content {
+        margin-top: 48px;
+        padding: 0px 20px 0px 20px;
+
+        .section_content {
+            text-decoration: none;
+
+            .images-recomanded {
+                width: 100%;
+                height: 380px;
+            }
+
+            &_title {
+                margin-top: 14px;
+                font-weight: bold;
+                font-size: 20px;
+                text-transform: uppercase;
+                line-height: 20px;
+                color: $black-10;
+            }
+
+            &_rupiah {
+                margin-top: 2px;
+                color: $red-6;
+            }
+
+            &_rating {
+                display: flex;
+                align-items: center;
+
+                .star-rating {
+
+                    .star {
+                      display: inline-block;
+                      color: $yellow-10 !important;
+                      font-size: 18px;
+
+                  
+                      &:hover {
+                        cursor: pointer;
+                      }
+                    }
+                  }
+                .total {
+                    margin-left: 4px;
+                    font-size: 16px;
+                    color: $black-7;
+                }
+            }
+        }
+        
+    }
+}
