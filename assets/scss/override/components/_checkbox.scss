@@ -1,0 +1,35 @@
+.custom-checkbox {
+  border: 1px solid $black-4;
+  width: 114px;
+  background-color: $black-4;
+
+
+  .custom-control-label {
+    font-size: 22px;
+    color: $black-6;
+    font-weight: bold;
+
+    &::before {
+      width: 1.4rem !important;
+      height: 1.4rem !important;
+      margin-top: 2px !important;
+      margin-left: 90px !important;
+      border-radius: 0px;
+      border: 0;
+      background-color: transparent;
+
+    }
+
+    &::after {
+      width: 1.4rem !important;
+      height: 1.4rem !important;
+      margin-top: 2px !important;
+      margin-left: 90px !important;
+      border-radius: 0px;
+    }
+
+    &::hover {
+      border: 0 !important;
+    }
+  }
+}

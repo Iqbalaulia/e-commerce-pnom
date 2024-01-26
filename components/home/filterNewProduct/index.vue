@@ -8,14 +8,14 @@
            <div class="another-link">
                <a href="#">
                     lihat lainnya
-               </a> 
+               </a>
            </div>
         </div>
 
         <div class="pnom-filter-new-product_content">
             <b-row>
                 <b-col md="3">
-                    <a href="#" class="section_content">
+                    <NuxtLink  to="/p/tankpad-vario-160-pelindung" class="section_content">
                         <img class="images-new-product" src="~/assets/images/new-product/new-product-1.png" alt="category-1">
                         <div class="section_content_title">
                             tankpad vario 160 pelindung  dashboard motor
@@ -35,10 +35,10 @@
                             </div>
                             <div class="total">1.2K Terjual/bulan</div>
                         </div>
-                    </a>
+                    </NuxtLink >
                 </b-col>
                 <b-col md="3">
-                    <a href="#" class="section_content">
+                    <NuxtLink to="/p/tankpad-vario-160-pelindung" class="section_content">
                         <img class="images-new-product" src="~/assets/images/new-product/new-product-2.png" alt="category-1">
                         <div class="section_content_title">
                             tankpad pelindung dashboard motor beat esp 2017 - 2019
@@ -58,10 +58,10 @@
                             </div>
                             <div class="total">1.2K Terjual/bulan</div>
                         </div>
-                    </a>
+                      </NuxtLink>
                 </b-col>
                 <b-col md="3">
-                    <a href="#" class="section_content">
+                    <NuxtLink to="/p/tankpad-vario-160-pelindung" class="section_content">
                         <img class="images-new-product" src="~/assets/images/new-product/new-product-3.png" alt="category-1">
                         <div class="section_content_title">
                             tankpad pelindung dashboard motor beat deluxe 2020 - 2023 ...
@@ -81,10 +81,10 @@
                             </div>
                             <div class="total">1.2K Terjual/bulan</div>
                         </div>
-                    </a>
+                      </NuxtLink>
                 </b-col>
                 <b-col md="3">
-                    <a href="#" class="section_content">
+                    <NuxtLink to="/p/tankpad-vario-160-pelindung" class="section_content">
                         <img class="images-new-product" src="~/assets/images/new-product/new-product-4.png" alt="category-1">
                         <div class="section_content_title">
                             108 pcs sticker random aes-thetic anti air untuk hp/laptop/
@@ -104,7 +104,7 @@
                             </div>
                             <div class="total">1.2K Terjual/bulan</div>
                         </div>
-                    </a>
+                      </NuxtLink>
                 </b-col>
             </b-row>
         </div>

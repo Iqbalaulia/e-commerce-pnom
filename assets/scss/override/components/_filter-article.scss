@@ -16,7 +16,7 @@
                 margin-right: 8px;
                 border-radius: 4px;
             }
-    
+
             label {
                 font-weight: bold;
                 text-transform: uppercase;
@@ -66,9 +66,8 @@
 
             &_link {
                 display: flex;
-                justify-content: end;
                 margin-top: 14px;
-
+                justify-content:space-between;
                 a {
                     font-size: 16px;
                     color: $black-7;
@@ -78,6 +77,5 @@
             }
 
         }
-        
     }
 }

@@ -3,6 +3,7 @@
 @import './override/login';
 @import './override/register';
 @import './override/home';
+@import './override/detail-product';
 
 @import './override/components/navbar';
 @import './override/components/footer';
@@ -12,14 +13,16 @@
 @import './override/components/filter-new-product';
 @import './override/components/filter-recomanded';
 @import './override/components/filter-article';
+@import './override/components/checkbox';
+@import './override/components/button';
 
 @import './components/button/button';
 
 
 body {
     font-family: 'Poppins', sans-serif;
-    -moz-transform: scale(0.8, 0.8); 
-    zoom: 0.8; 
+    -moz-transform: scale(0.8, 0.8);
+    zoom: 0.8;
     zoom: 80%;
 }
 
