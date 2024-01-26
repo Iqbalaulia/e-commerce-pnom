@@ -132,6 +132,8 @@
         </div>
         <div class="col-md-7"></div>
       </div>
+      <filter-relate class="p-0 mt-5"/>
+      <filter-recomanded class="p-0 mt-5"/>
     </div>
     <footer-ecommerce/>
   </div>
