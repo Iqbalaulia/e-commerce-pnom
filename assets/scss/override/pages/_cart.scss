@@ -1,0 +1,252 @@
+.cart_product {
+
+  &_content {
+    padding: 60px 228px 60px 228px;
+
+    .data-title {
+      display: flex;
+      align-items: center;
+
+      .devider {
+          height: 25px;
+          border-left: 8px solid $blue-9;
+          margin-right: 8px;
+          border-radius: 4px;
+      }
+
+      label {
+          font-weight: bold;
+          text-transform: uppercase;
+          font-size: 28px;
+          margin: 0;
+      }
+    }
+
+    .select_all {
+      margin-top: 30px;
+    }
+
+    .show_cart {
+      margin-top: 28px;
+      display: flex;
+      align-items: flex-start;
+
+      &_select {
+        display: flex;
+        align-items: center;
+
+        .images-cart {
+          width: 180px;
+          height: 180px;
+          border-radius: 8px;
+        }
+      }
+
+      &_information {
+        label {
+          font-weight: 500;
+          font-size: 28px;
+          color: $black-10;
+          line-height: 34px;
+        }
+
+        .action_variant {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+
+          .variant {
+            label {
+              color: $black-9;
+              font-size: 18px;
+            }
+
+            .money {
+              font-size: 24px;
+              font-weight: 800;
+              color: $black-10;
+              line-height: 20px;
+            }
+          }
+
+          .delete_list {
+            .btn_trash {
+              background-color: $white;
+              color: $black-10;
+              font-size: 24px;
+              border: none !important;
+            }
+          }
+        }
+
+        .action_cart {
+          margin-top: 18px;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+
+          .action_button {
+            display: flex;
+            align-items: center;
+
+            .btn_quantity {
+              display: flex;
+              align-items: center;
+
+              .btn_count-min {
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+                background-color: $white;
+                border: 1px solid $blue-9;
+                color: $blue-9;
+                font-weight: bold;
+                height: 42px;
+              }
+
+              .btn_count-plus {
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+                background-color: $white;
+                border: 1px solid $blue-9;
+                color: $blue-9;
+                font-weight: bold;
+                height: 42px;
+              }
+
+              .input_quantity {
+                width: 80px;
+                height: 42px !important;
+                border-radius: 0;
+                border: 1px solid $blue-9;
+                text-align: center;
+              }
+            }
+
+            .btn_edit {
+                background-color: $white;
+                color: $black-10;
+                font-size: 24px;
+                border: none !important;
+            }
+
+            .btn_whislist {
+                background-color: $white;
+                color: $black-10;
+                font-size: 24px;
+                border: none !important;
+            }
+          }
+        }
+      }
+    }
+
+    .information_promo {
+      display: flex;
+      align-items: center;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 2px 3px 9px 0px rgba(0,0,0,0.75);
+      -webkit-box-shadow: 2px 3px 9px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 2px 3px 9px 0px rgba(0,0,0,0.75);
+
+      img {
+        width: 76px;
+        height: 130px;
+      }
+      label {
+        color: $black-10;
+        font-weight: 600;
+        font-size: 20px;
+      }
+    }
+
+    .total_purchasing {
+      label {
+        font-weight: 700;
+        font-size: 24px;
+        text-transform: capitalize;
+        color: $black-10;
+        text-decoration: underline;
+      }
+
+      .total_product {
+        display: flex;
+        justify-content: space-between;
+        label {
+          font-weight: 500;
+          font-size: 18px;
+          color: $black-10;
+          text-decoration: none;
+        }
+
+        .count {
+          color: $black-10;
+          font-weight: 500;
+          font-size: 18px;
+        }
+      }
+
+
+      .total_promo {
+        display: flex;
+        justify-content: space-between;
+
+        label {
+          font-weight: bold;
+          font-size: 18px;
+          color: $black-10;
+          text-decoration: none;
+          text-transform: capitalize;
+        }
+
+        .count {
+          color: $black-10;
+          font-weight: 500;
+          font-size: 18px;
+        }
+      }
+
+      .total_price {
+        display: flex;
+        justify-content: space-between;
+
+        label {
+          font-weight: bold;
+          font-size: 18px;
+          color: $black-10;
+          text-decoration: none;
+          text-transform: capitalize;
+        }
+
+        .count {
+          color: $black-10;
+          font-weight: 500;
+          font-size: 18px;
+        }
+      }
+    }
+
+    .checkout{
+      text-align: center;
+
+      .btn_checkout{
+        font-size: 32px;
+        font-weight: bold;
+        color: $white;
+        background-color: $red-9;
+        width: 286px;
+        height: 60px;
+        border-radius: 16px;
+        text-transform: uppercase;
+      }
+
+      .whislist {
+        text-align: center;
+      }
+    }
+  }
+}

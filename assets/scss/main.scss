@@ -1,9 +1,27 @@
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    -moz-transform: scale(0.8, 0.8);
+    zoom: 0.8;
+    zoom: 80%;
+}
+
+input {
+    height: 50px !important;
+}
+
+
+
 @import './kit/kit';
+
+@import './components/button/button';
 
 @import './override/login';
 @import './override/register';
 @import './override/home';
 @import './override/detail-product';
+@import './override/pages/cart';
 
 @import './override/components/navbar';
 @import './override/components/footer';
@@ -17,16 +35,3 @@
 @import './override/components/button';
 
 
-@import './components/button/button';
-
-
-body {
-    font-family: 'Poppins', sans-serif;
-    -moz-transform: scale(0.8, 0.8);
-    zoom: 0.8;
-    zoom: 80%;
-}
-
-input {
-    height: 50px !important;
-}

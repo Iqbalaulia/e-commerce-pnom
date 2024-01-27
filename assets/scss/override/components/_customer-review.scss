@@ -3,7 +3,7 @@
 
   &_header {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     justify-content: space-between;
 
     .header_title {
@@ -46,7 +46,7 @@
   &_content {
     margin-top: 36px;
     display: flex;
-    align-items: start;
+    align-items: flex-start;
 
     .avatar {
       padding: 0px 10px 0px 10px;

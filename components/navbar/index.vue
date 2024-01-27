@@ -2,7 +2,7 @@
     <div class="pnom-navbar">
         <div class="pnom-navbar_header-1">
             <div class="container">
-                <b-navbar>                
+                <b-navbar>
                     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
                     <b-collapse id="nav-collapse" is-nav>
                       <b-navbar-nav>
@@ -19,8 +19,8 @@
                             Ponorogo - East Java - Indonesia
                         </b-nav-item>
                       </b-navbar-nav>
-                
-                      <b-navbar-nav class="ml-auto">                    
+
+                      <b-navbar-nav class="ml-auto">
                         <b-nav-item href="/daftar">Sign Up</b-nav-item>
                         <b-nav-item href="/login">Sign In</b-nav-item>
 
@@ -59,7 +59,7 @@
                             <b-badge class="badge-cart" variant="danger">
                                 <span>99</span>
                             </b-badge>
-                            <b-nav-item href="#" class="cart text-center">
+                            <b-nav-item href="/cart" class="cart text-center">
                                 <i class="fas fa-cart-shopping" />
                                 <div class="cart_title text-white">Your Cart</div>
                             </b-nav-item>
@@ -70,7 +70,7 @@
         </div>
         <div class="pnom-navbar_header-3">
             <div class="container">
-                <b-navbar>                
+                <b-navbar>
                     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
                     <b-collapse id="nav-collapse" is-nav>
                       <b-navbar-nav>
@@ -105,11 +105,11 @@ export default {
     name:'Navbar',
     data() {
         return {
-            
+
         }
     },
     methods:{
-        
+
     },
     components:{
 
