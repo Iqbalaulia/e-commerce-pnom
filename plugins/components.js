@@ -10,6 +10,7 @@ import FilterNewProduct from '~/components/home/filterNewProduct/index.vue';
 import FilterRecomanded from '~/components/home/filterRecomanded/index.vue';
 import FilterArticle from '~/components/home/filterArticle/index.vue';
 import FilterRelate from '~/components/home/filterRelate/index.vue';
+import CustomerReviewComponent from '~/components/reviewCustomer/index.vue';
 
 Vue.component('Tutorial', Tutorial);
 Vue.component('header-login', Header);
@@ -23,4 +24,6 @@ Vue.component('filter-new-product', FilterNewProduct)
 Vue.component('filter-recomanded', FilterRecomanded)
 Vue.component('filter-article', FilterArticle)
 Vue.component('filter-relate', FilterRelate)
+
+Vue.component('customer-review-component', CustomerReviewComponent)
 

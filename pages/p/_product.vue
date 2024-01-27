@@ -130,7 +130,9 @@
             </div>
           </div>
         </div>
-        <div class="col-md-7"></div>
+        <div class="col-md-7">
+          <customer-review-component/>
+        </div>
       </div>
       <filter-relate class="p-0 mt-5"/>
       <filter-recomanded class="p-0 mt-5"/>
@@ -140,7 +142,7 @@
 </template>
 
 <script>
-import { mockDataMotif, mockDataBahan, mockDataRatingProductDetail } from '../../store/mock/mockData';
+import { mockDataMotif, mockDataBahan, mockDataRatingProductDetail } from '~/store/mock/mockData';
 
 export default {
   name:'DetailProduct',

@@ -76,3 +76,86 @@ export const mockDataRatingProductDetail = [
     total: 0
   }
 ]
+
+export const mockDataReviewersProduct = [
+  {
+    imagesProfile: '',
+    name:'Uji coba',
+    ratings: 5,
+    comments:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris diam ante, venenatis ac malesuada eu, fringilla in est. Duis eu feugiat nunc. In nec nibh eu metus efficitur vestibulum. Vivamus et sapien at ligula cursus suscipit eu ut augue.',
+    imagesReviews:[
+      "https://picsum.photos/1024/400/?image=41",
+      "https://picsum.photos/1024/400/?image=41"
+    ]
+  },
+  {
+    imagesProfile: '',
+    name:'Uji coba',
+    ratings: 5,
+    comments:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris diam ante, venenatis ac malesuada eu, fringilla in est. Duis eu feugiat nunc. In nec nibh eu metus efficitur vestibulum. Vivamus et sapien at ligula cursus suscipit eu ut augue.',
+    imagesReviews:[
+      "https://picsum.photos/1024/400/?image=41",
+      "https://picsum.photos/1024/400/?image=41"
+    ]
+  },
+  {
+    imagesProfile: '',
+    name:'Uji coba',
+    ratings: 5,
+    comments:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris diam ante, venenatis ac malesuada eu, fringilla in est. Duis eu feugiat nunc. In nec nibh eu metus efficitur vestibulum. Vivamus et sapien at ligula cursus suscipit eu ut augue.',
+    imagesReviews:[
+      "https://picsum.photos/1024/400/?image=41",
+      "https://picsum.photos/1024/400/?image=41"
+    ]
+  },
+  {
+    imagesProfile: '',
+    name:'Uji coba',
+    ratings: 5,
+    comments:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris diam ante, venenatis ac malesuada eu, fringilla in est. Duis eu feugiat nunc. In nec nibh eu metus efficitur vestibulum. Vivamus et sapien at ligula cursus suscipit eu ut augue.',
+    imagesReviews:[
+      "https://picsum.photos/1024/400/?image=41",
+      "https://picsum.photos/1024/400/?image=41"
+    ]
+  },
+  {
+    imagesProfile: '',
+    name:'Uji coba',
+    ratings: 5,
+    comments:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris diam ante, venenatis ac malesuada eu, fringilla in est. Duis eu feugiat nunc. In nec nibh eu metus efficitur vestibulum. Vivamus et sapien at ligula cursus suscipit eu ut augue.',
+    imagesReviews:[
+      "https://picsum.photos/1024/400/?image=41",
+      "https://picsum.photos/1024/400/?image=41"
+    ]
+  },
+  {
+    imagesProfile: '',
+    name:'Uji coba',
+    ratings: 5,
+    comments:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris diam ante, venenatis ac malesuada eu, fringilla in est. Duis eu feugiat nunc. In nec nibh eu metus efficitur vestibulum. Vivamus et sapien at ligula cursus suscipit eu ut augue.',
+    imagesReviews:[
+      "https://picsum.photos/1024/400/?image=41",
+      "https://picsum.photos/1024/400/?image=41"
+    ]
+  },
+  {
+    imagesProfile: '',
+    name:'Uji coba',
+    ratings: 5,
+    comments:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris diam ante, venenatis ac malesuada eu, fringilla in est. Duis eu feugiat nunc. In nec nibh eu metus efficitur vestibulum. Vivamus et sapien at ligula cursus suscipit eu ut augue.',
+    imagesReviews:[
+      "https://picsum.photos/1024/400/?image=41",
+      "https://picsum.photos/1024/400/?image=41"
+    ]
+  },
+  {
+    imagesProfile: '',
+    name:'Uji coba',
+    ratings: 5,
+    comments:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris diam ante, venenatis ac malesuada eu, fringilla in est. Duis eu feugiat nunc. In nec nibh eu metus efficitur vestibulum. Vivamus et sapien at ligula cursus suscipit eu ut augue.',
+    imagesReviews:[
+      "https://picsum.photos/1024/400/?image=41",
+      "https://picsum.photos/1024/400/?image=41"
+    ]
+  }
+]
