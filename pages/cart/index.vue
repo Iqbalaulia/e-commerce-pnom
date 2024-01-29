@@ -60,6 +60,7 @@
                 id="textarea-rows"
                 placeholder="Tulis Catatan Untuk Produk Ini"
                 rows="4"
+                v-model="cartItem.notes"
               />
 
               <div class="action_button">
@@ -75,7 +76,7 @@
                 </div>
                 <div class="btn_quantity">
                   <b-button class="btn_count-min">-</b-button>
-                  <b-form-input class="input_quantity"/>
+                  <b-form-input v-model="cartItem.countProduct" class="input_quantity"/>
                   <b-button class="btn_count-plus">+</b-button>
                 </div>
               </div>

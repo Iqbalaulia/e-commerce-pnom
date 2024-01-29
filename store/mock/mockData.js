@@ -169,7 +169,8 @@ export const mockDataCart = [
     ],
     price:'40500',
     uuid: '11221212131212',
-    countProduct: '2'
+    countProduct: '2',
+    notes:''
    },
    {
     productName: 'Striping Beat Pelindung Dashboard Tankpad Stiker Beat Deluxe 2020 2021 2022 2023 Stiker Motor Keren Variasi',
@@ -179,6 +180,7 @@ export const mockDataCart = [
     ],
     price:'40500',
     uuid: '11221212131212',
-    countProduct: '1'
+    countProduct: '1',
+    notes:''
    }
 ]
