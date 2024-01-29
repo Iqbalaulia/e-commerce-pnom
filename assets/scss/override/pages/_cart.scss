@@ -230,23 +230,28 @@
       }
     }
 
-    .checkout{
-      text-align: center;
+    .col-md-custom {
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-      .btn_checkout{
-        font-size: 32px;
-        font-weight: bold;
-        color: $white;
-        background-color: $red-9;
-        width: 286px;
-        height: 60px;
-        border-radius: 16px;
-        text-transform: uppercase;
-      }
+      .checkout{
+        .btn_checkout{
+          font-size: 32px;
+          font-weight: bold;
+          color: $white;
+          background-color: $red-9;
+          width: 286px;
+          height: 60px;
+          border-radius: 16px;
+          text-transform: uppercase;
+        }
 
-      .whislist {
-        text-align: center;
+        .whislist {
+          text-align: center;
+        }
       }
     }
+
   }
 }

@@ -25,6 +25,9 @@
       </div>
       <div class="row">
         <div class="col-md-12 show_cart">
+
+        </div>
+        <div class="col-md-12 show_cart" v-for="(cartItem, index) in mockDataCart" :key="index">
           <div class="show_cart_select mr-3">
             <b-form-checkbox
               id="checkbox-1"
@@ -33,7 +36,7 @@
             />
             <b-img-lazy class="images-cart" src="https://picsum.photos/1024/400/?image=41" alt="Responsive image"/>
           </div>
-          <div class="show_cart_information">
+          <div class="show_cart_information" >
             <label for="">
               Striping Beat Pelindung Dashboard Tankpad Stiker Beat Deluxe 2020 2021 2022 2023 Stiker Motor Keren Variasi
             </label>
@@ -95,26 +98,26 @@
           <div class="total_purchasing">
             <label for="">ringkasan pembelian</label>
             <div class="total_product">
-              <label for="">Total ( 1 Produk)</label>
+              <label for="">Total ( {{ mockDataCart.length }} Produk)</label>
               <div class="count">
-                Rp40.500
+                Rp.{{totalCalculatePrice}}
               </div>
             </div>
             <div class="total_promo">
               <label for="">Potongan Promo</label>
               <div class="count">
-                -Rp15.000
+               - Rp.{{ nominalPromo }}
               </div>
             </div>
             <div class="total_price">
               <label for="">Total Harga</label>
               <div class="count">
-                Rp40.500
+                Rp.{{totalCalculatePrice - parseInt(nominalPromo)}}
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-md-custom">
           <div class="checkout">
             <b-button class="btn_checkout">
               checkout
@@ -132,12 +135,21 @@
 </template>
 
 <script>
+import { mockDataCart } from '~/store/mock/mockData'
 export default {
   name:'Cart',
   data() {
     return {
-
+      mockDataCart:mockDataCart,
+      nominalPromo:'20000'
     }
   },
+  computed:{
+    totalCalculatePrice() {
+      return this.mockDataCart.reduce((total, product) => {
+        return total + (parseInt(product.price) * parseInt(product.countProduct));
+      }, 0)
+    }
+  }
 }
 </script>
