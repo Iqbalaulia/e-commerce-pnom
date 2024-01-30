@@ -120,9 +120,11 @@
         </div>
         <div class="col-md-4 col-md-custom">
           <div class="checkout">
-            <b-button class="btn_checkout">
-              checkout
-            </b-button>
+            <router-link to="/checkout">
+              <b-button class="btn_checkout">
+                checkout
+              </b-button>
+            </router-link>
             <div class="whislist">
               <i class="far fa-heart" />
               Tambahkan Ke Wishlist

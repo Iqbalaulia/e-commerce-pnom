@@ -17,11 +17,12 @@ input {
 
 @import './components/button/button';
 
-@import './override/login';
-@import './override/register';
-@import './override/home';
-@import './override/detail-product';
+@import './override/pages/login';
+@import './override/pages/register';
+@import './override/pages/home';
+@import './override/pages/detail-product';
 @import './override/pages/cart';
+@import './override/pages/checkout';
 
 @import './override/components/navbar';
 @import './override/components/footer';
