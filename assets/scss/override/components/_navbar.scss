@@ -1,8 +1,8 @@
 .pnom-navbar {
-    
+
     &_header-1 {
         background-color: $blue-10;
-        
+
         .navbar-nav {
             .nav-item {
                 a {
@@ -18,6 +18,20 @@
                 i {
                     color: $red-9;
                 }
+            }
+
+            a {
+              color: $white;
+              font-size: 12px;
+              text-decoration: none;
+              margin-left: 12px;
+              &:hover {
+                  color: $white;
+              }
+            }
+
+            i {
+                color: $red-9;
             }
         }
     }
@@ -50,13 +64,13 @@
             }
         }
 
-        .wishlist { 
+        .wishlist {
             i {
                 color: $white;
                 font-size: 20px;
             }
 
-            
+
         }
 
         .badge-pnom {

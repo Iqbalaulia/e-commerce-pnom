@@ -21,9 +21,8 @@
                       </b-navbar-nav>
 
                       <b-navbar-nav class="ml-auto">
-                        <b-nav-item href="/daftar">Sign Up</b-nav-item>
-                        <b-nav-item href="/login">Sign In</b-nav-item>
-
+                        <router-link to="/daftar">Sign Up</router-link>
+                        <router-link to="/login">Sign In</router-link>
                       </b-navbar-nav>
                     </b-collapse>
                   </b-navbar>
