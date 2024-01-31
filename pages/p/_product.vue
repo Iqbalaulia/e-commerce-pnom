@@ -86,8 +86,11 @@
                   </div>
                 </div>
                 <div class="detail_content_cart">
-                  <b-button variant="outline-primary">+ Keranjang</b-button>
-                  <b-button class="ml-3" variant="primary">Beli Langsung</b-button>
+                  <b-button variant="outline-primary" class="w-25 pnom-btn-primary">
+                    <i class="fas fa-cart-plus"></i>
+                    Keranjang
+                  </b-button>
+                  <b-button class="ml-3 w-25 pnom-btn-primary" variant="primary">Beli Langsung</b-button>
                 </div>
             </div>
           </div>

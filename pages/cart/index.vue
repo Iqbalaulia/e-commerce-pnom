@@ -37,9 +37,11 @@
             <b-img-lazy class="images-cart" src="https://picsum.photos/1024/400/?image=41" alt="Responsive image"/>
           </div>
           <div class="show_cart_information" >
-            <label for="">
-              Striping Beat Pelindung Dashboard Tankpad Stiker Beat Deluxe 2020 2021 2022 2023 Stiker Motor Keren Variasi
-            </label>
+            <router-link :to="`/p/striping-beat-pelindung`">
+              <label for="">
+                Striping Beat Pelindung Dashboard Tankpad Stiker Beat Deluxe 2020 2021 2022 2023 Stiker Motor Keren Variasi
+              </label>
+            </router-link>
             <div class="action_variant">
               <div class="variant">
                 <label for="">
