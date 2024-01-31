@@ -139,18 +139,36 @@
             </div>
           </div>
         </div>
-        <div class="col-md-8">
-          <!-- <div class="checkout">
-            <router-link to="/checkout">
-              <b-button class="btn_checkout">
-                checkout
-              </b-button>
-            </router-link>
-            <div class="whislist">
-              <i class="far fa-heart" />
-              Tambahkan Ke Wishlist
+        <div class="col-md-2"></div>
+        <div class="col-md-6">
+          <div class="method_payment">
+            <div class="method_payment_label">
+              metode pembayaran
             </div>
-          </div> -->
+            <div class="row mt-4">
+              <div class="col-md-6">
+               <router-link to="#">
+                <b-button class="pnom-btn-red w-100">
+                  c.o.d
+                </b-button>
+               </router-link>
+              </div>
+              <div class="col-md-6">
+                <router-link to="#">
+                  <b-button class="pnom-btn-red w-100">
+                    qris
+                  </b-button>
+                 </router-link>
+              </div>
+              <div class="col-md-12 mt-5">
+                <router-link to="#">
+                  <b-button class="pnom-btn-red w-100">
+                    proses pesanan
+                  </b-button>
+                 </router-link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

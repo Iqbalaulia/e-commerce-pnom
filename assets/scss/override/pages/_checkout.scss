@@ -102,6 +102,7 @@
           color: $black-10;
           line-height: 30px;
           font-weight: 700;
+          margin-bottom: 20px;
         }
 
         .order_data_content {
@@ -250,26 +251,15 @@
       }
     }
 
-    .col-md-custom {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .method_payment {
 
-      .checkout{
-        .btn_checkout{
-          font-size: 32px;
-          font-weight: bold;
-          color: $white;
-          background-color: $red-9;
-          width: 286px;
-          height: 60px;
-          text-transform: uppercase;
-        }
-
-        .whislist {
-          text-align: center;
-        }
+      &_label {
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: capitalize;
+        text-decoration: underline;
       }
     }
+
   }
 }

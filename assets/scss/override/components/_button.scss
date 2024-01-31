@@ -1,6 +1,4 @@
 .btn {
-  height: 45px;
-
   &-outline-primary {
     color: $blue-9 !important;
     border-radius: 4px !important;
@@ -20,5 +18,31 @@
       background-color: $blue-9;
       color: $white !important;
     }
+  }
+}
+
+
+.pnom-btn-yellow {
+  background-color: $yellow-9;
+  border: $yellow-9;
+  font-weight: bold;
+}
+
+
+.pnom-btn-red {
+  font-size: 32px;
+  font-weight: bold;
+  color: $white;
+  background-color: $red-9;
+  width: 286px;
+  height: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid $red-9;
+
+  &:hover {
+    background-color: $white;
+    color: $black-10;
+    border: 1px solid $red-9;
   }
 }
