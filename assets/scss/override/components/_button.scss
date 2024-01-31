@@ -46,3 +46,22 @@
     border: 1px solid $red-9;
   }
 }
+
+.pnom-btn-white {
+  background-color: $white;
+  color: $black-10;
+  font-size: 24px;
+  border: none !important;
+
+  &:hover {
+    background-color: $white;
+    border: none;
+    color: $black-10;
+  }
+
+  &::after {
+    background-color: $white;
+    border: none;
+    color: $black-10;
+  }
+}

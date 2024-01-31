@@ -14,11 +14,23 @@
 
       <div class="row">
         <div class="col-md-12">
-          <div class="title_address">
-            <i class="fas fa-map-marker-alt"></i>
-            <label for="alamat pengiriman">
-              alamat pengiriman
-            </label>
+          <div class="address">
+            <div class="title_address">
+              <i class="fas fa-map-marker-alt"></i>
+              <label for="alamat pengiriman">
+                alamat pengiriman
+              </label>
+            </div>
+            <div class="section_dropshipper">
+              <b-form-checkbox
+                id="checkbox-1"
+                name="checkbox-1"
+                v-model="sendDropshipper"
+                @change="onChangeDropshipper"
+              >
+                Kirim Sebagai Dropshipper
+              </b-form-checkbox>
+            </div>
           </div>
         </div>
         <div class="col-md-12">
@@ -39,6 +51,44 @@
               <b-button class="btn_edit">
                 <i class="far fa-edit"></i>
               </b-button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" v-if="sendDropshipper">
+        <div class="col-md-12">
+          <div class="address_dropshipper">
+            <div class="address_dropshipper_title">
+              alamat penerima
+            </div>
+            <div class="address_dropshipper_content">
+              <div class="address_dropshipper_content_name">
+                <label for="Andrew Subiakto">Andrew Subiakto</label>
+                <div class="contact">
+                  (+62)851 6223 1908
+                </div>
+              </div>
+              <div class="address_dropshipper_content_location" v-if="!locationDropshipper">
+                {{formData.locationDropshipper}}
+              </div>
+              <div class="address_dropshipper_content_edit_location" v-if="saveLocationDropshipper">
+                <b-form-textarea
+                  id="textarea"
+                  v-model="formData.locationDropshipper"
+                  placeholder="Enter something..."
+                  rows="3"
+                  max-rows="6"
+                ></b-form-textarea>
+              </div>
+              <div>
+                <b-button v-if="!saveLocationDropshipper" @click="editedLocationDropshipper()" class="pnom-btn-white">
+                  <i class="far fa-edit"></i>
+                </b-button>
+                <b-button v-else @click="savedLocationDropshipper()" class="pnom-btn-white">
+                  <i class="far fa-save"></i>
+                </b-button>
+              </div>
             </div>
           </div>
         </div>
@@ -77,6 +127,7 @@
           </div>
         </div>
       </div>
+
       <div class="row mt-5">
         <div class="col-md-4">
           <div class="information_promo">
@@ -181,8 +232,28 @@ export default {
   name:'PageCheckout',
   data() {
     return {
-
+      sendDropshipper: false,
+      locationDropshipper: false,
+      saveLocationDropshipper: false,
+      formData:{
+        locationDropshipper: ''
+      }
     }
   },
+  methods: {
+    onChangeDropshipper(checked) {
+      this.sendDropshipper = checked
+    },
+
+    editedLocationDropshipper() {
+      this.locationDropshipper = true
+      this.saveLocationDropshipper = true
+    },
+
+    savedLocationDropshipper() {
+      this.saveLocationDropshipper = false
+      this.locationDropshipper = false
+    }
+  }
 }
 </script>
