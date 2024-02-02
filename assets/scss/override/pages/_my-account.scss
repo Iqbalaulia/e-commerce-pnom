@@ -1,0 +1,64 @@
+.my_account {
+  padding: 16px;
+
+  &_title {
+    font-weight: bold;
+    font-size: 28px;
+    text-transform: capitalize;
+    margin-bottom: 28px;
+  }
+
+  &_images {
+
+    text-align: center;
+
+    img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+    }
+
+    .upload_button {
+      width: 200px !important;
+      margin-top: 20px;
+      background-color: #ffffff;
+      border: 1px solid $blue-9;
+      color: $blue-9;
+      font-weight: bold;
+      border-radius: 5px;
+      padding: 10px 20px;
+      display: inline-block;
+      cursor: pointer;
+      position: relative;
+      font-size: 20px;
+
+      &:hover {
+        background-color: $blue-9;
+        color: $white;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        font-size: 1.2em;
+        color: #2980b9;
+      }
+
+      input[type="file"] {
+        display: none;
+      }
+    }
+
+    .size {
+      margin-top: 10px;
+      label {
+        font-size: 14px;
+        color: $black-6;
+        line-height: 10px;
+      }
+    }
+  }
+}

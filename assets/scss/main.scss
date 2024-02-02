@@ -1,37 +1,33 @@
-
-
 body {
-    font-family: 'Poppins', sans-serif;
-    -moz-transform: scale(0.8, 0.8);
-    zoom: 0.8;
-    zoom: 80%;
+  font-family: "Poppins", sans-serif;
+  -moz-transform: scale(0.8, 0.8);
+  zoom: 0.8;
+  zoom: 80%;
 }
 
 input {
-    height: 50px !important;
+  height: 50px !important;
 }
 
+@import "./kit/kit";
+
+@import "./override/pages/login";
+@import "./override/pages/register";
+@import "./override/pages/home";
+@import "./override/pages/detail-product";
+@import "./override/pages/cart";
+@import "./override/pages/checkout";
+@import "./override/pages/user-account";
+@import "./override/pages/my-account";
 
 
-@import './kit/kit';
-
-@import './override/pages/login';
-@import './override/pages/register';
-@import './override/pages/home';
-@import './override/pages/detail-product';
-@import './override/pages/cart';
-@import './override/pages/checkout';
-@import './override/pages/user-account';
-
-@import './override/components/navbar';
-@import './override/components/footer';
-@import './override/components/customer-review';
-@import './override/components/filter-category';
-@import './override/components/filter-popular';
-@import './override/components/filter-new-product';
-@import './override/components/filter-recomanded';
-@import './override/components/filter-article';
-@import './override/components/checkbox';
-@import './override/components/button';
-
-
+@import "./override/components/navbar";
+@import "./override/components/footer";
+@import "./override/components/customer-review";
+@import "./override/components/filter-category";
+@import "./override/components/filter-popular";
+@import "./override/components/filter-new-product";
+@import "./override/components/filter-recomanded";
+@import "./override/components/filter-article";
+@import "./override/components/checkbox";
+@import "./override/components/button";

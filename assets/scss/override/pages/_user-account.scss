@@ -1,10 +1,83 @@
 .user {
-
   &_content {
     padding: 60px 228px 60px 228px;
 
     &_sidebar {
+      border: 1px solid $black-3;
+      box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+      padding: 16px;
+      border-radius: 8px;
 
+      .images_profile {
+        display: flex;
+        align-items: center;
+        img {
+          width: 80px;
+          height: 80px;
+          border: 1px solid $black-5;
+          border-radius: 50%;
+        }
+
+        &_name {
+          font-size: 20px;
+          font-weight: 700;
+          text-transform: capitalize;
+          margin-left: 10px;
+        }
+
+        &_username {
+          font-size: 16px;
+          text-transform: capitalize;
+          margin-left: 10px;
+        }
+      }
+
+      .sidebar_menu {
+        margin-top: 18px;
+
+        ul {
+          padding: 0;
+          li {
+            list-style-type: none;
+          }
+
+          .title_menu {
+            font-size: 24px;
+            font-weight: bold;
+          }
+
+          .sub_menu {
+            display: flex;
+            align-items: center;
+
+            i {
+              font-size: 24px;
+              margin-right: 16px;
+              padding: 4px;
+            }
+            padding: 15px 10px 15px 10px;
+            font-size: 18px;
+            color: $black-7;
+
+            &:hover {
+              border: 1px solid $blue-9;
+              border-radius: 8px;
+              color: $blue-9;
+              font-weight: 700;
+              cursor: pointer;
+            }
+          }
+
+          .sub_menu_active {
+            border: 1px solid $blue-9;
+            border-radius: 8px;
+            color: $blue-9;
+            font-weight: 700;
+            cursor: pointer;
+          }
+        }
+      }
     }
   }
 }
