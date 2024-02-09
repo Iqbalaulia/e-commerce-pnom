@@ -54,10 +54,16 @@
 
     .size {
       margin-top: 10px;
-      label {
-        font-size: 14px;
+      line-height: 20px;
+
+      &_images {
+        font-size: 16px;
         color: $black-6;
-        line-height: 10px;
+      }
+
+      &_formats {
+        font-size: 16px;
+        color: $black-6;
       }
     }
   }

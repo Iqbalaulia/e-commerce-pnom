@@ -13,8 +13,8 @@
             Upload File
           </div>
           <div class="size">
-            <label>Ukuran Gambar : Maks 1 MB</label>
-            <label>Format Gambar : JPG, PNG</label>
+            <div class="size_images">Ukuran Gambar : Maks 1 MB</div>
+            <div class="size_formats">Format Gambar : JPG, PNG</div>
           </div>
         </div>
       </div>
@@ -69,6 +69,9 @@
             size="lg"
             id="example-datepicker"
           ></b-form-datepicker>
+        </b-form-group>
+        <b-form-group label-cols="4" label-cols-lg="3" label="Password">
+          <b-button class="btn-primary">Ubah Password</b-button>
         </b-form-group>
       </div>
     </div>
