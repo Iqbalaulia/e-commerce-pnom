@@ -1,4 +1,6 @@
 .my_address {
+  padding: 16px;
+
   &_title {
     display: flex;
     align-items: center;
@@ -29,7 +31,7 @@
       border-left: 12px solid $blue-9;
       height: 80px;
       position: absolute;
-      top: 160px;
+      top: 180px;
     }
 
     &_list {

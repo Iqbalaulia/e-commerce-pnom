@@ -45,9 +45,9 @@
                 Dropshipper
               </li>
               <li
-                @click="onChangeMenu(`pengaturan`)"
+                @click="onChangeMenu(`pengaturan-notifikasi`)"
                 :class="
-                  $route.query.menu === `pengaturan` ? `sub_menu_active` : ``
+                  $route.query.menu === `pengaturan-notifikasi` ? `sub_menu_active` : ``
                 "
                 class="sub_menu"
               >
@@ -55,7 +55,7 @@
                 Pengaturan Notifikasi
               </li>
               <li class="title_menu">Pesanan saya</li>
-              <li class="title_menu">wishlist</li>
+              <li class="title_menu">Wishlist</li>
             </ul>
           </div>
         </div>
