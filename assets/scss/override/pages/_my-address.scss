@@ -1,0 +1,108 @@
+.my_address {
+  &_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_address {
+      font-weight: bold;
+      font-size: 28px;
+      text-transform: capitalize;
+      margin-bottom: 28px;
+    }
+
+    &_add_address {
+      button {
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  &_content {
+    margin-top: 20px;
+
+    .line-devider{
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-left: 12px solid $blue-9;
+      height: 80px;
+      position: absolute;
+      top: 160px;
+    }
+
+    &_list {
+      display: flex;
+      align-items: center;
+      justify-content:space-between;
+      padding: 28px;
+      background-color: $black-2;
+      border-radius: 24px;
+
+      .title {
+        font-size: 24px;
+        font-weight: 700;
+        color: $black-10;
+        margin-bottom: 14px;
+        text-transform: capitalize;
+
+        .mark-primary {
+          margin-left: 10px;
+          color: $white;
+          text-transform: uppercase;
+          background-color: $black-5;
+          padding: 4px 20px 4px 20px;
+        }
+      }
+
+      .personal_name {
+        font-size: 18px;
+        font-weight: 700;
+        color: $black-10;
+        text-transform: capitalize;
+      }
+      .phone {
+        font-size: 18px;
+        font-weight: 700;
+        color: $black-6;
+        text-transform: capitalize;
+      }
+
+      .address {
+        font-size: 18px;
+        font-weight: 700;
+        color: $black-10;
+        text-transform: capitalize;
+      }
+
+      .action {
+        margin-top: 10px;
+        a {
+          text-transform: capitalize;
+          font-size: 16px;
+          color: $black-10;
+          text-decoration: none;
+          &:hover {
+            color: $blue-9;
+          }
+        }
+      }
+
+      .choose_address {
+        button {
+          font-size: 18px;
+          font-weight: bold;
+          text-transform: capitalize;
+          width: 100px;
+        }
+
+        .checklist {
+          font-size: 40px;
+          font-weight: bold;
+          color: $blue-9;
+        }
+      }
+    }
+  }
+}

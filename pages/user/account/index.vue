@@ -61,6 +61,7 @@
         </div>
         <div class="col-md-9">
           <my-account-component v-if="menu === `akun-saya`" />
+          <my-address-component v-if="menu === `alamat`"/>
         </div>
       </div>
     </div>
@@ -74,6 +75,9 @@ export default {
     return {
       menu: "akun-saya",
     };
+  },
+  mounted() {
+    this.onChangeMenu(`akun-saya`)
   },
   methods: {
     onChangeMenu(item) {

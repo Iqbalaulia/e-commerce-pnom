@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="footer-newslater">
+        <div v-if="$route.path !== `/user/account`" class="footer-newslater">
             <b-row>
                 <b-col md="12">
                     <div class="footer-newslater_title">

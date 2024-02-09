@@ -2,6 +2,7 @@
   &-outline-primary {
     color: $blue-9 !important;
     border-radius: 4px !important;
+    background-color: $white;
 
     &:hover {
       background-color: $blue-9;
@@ -57,6 +58,25 @@
   font-size: 24px;
   border: none !important;
 
+  &:hover {
+    background-color: $white;
+    border: none;
+    color: $black-10;
+  }
+
+  &::after {
+    background-color: $white;
+    border: none;
+    color: $black-10;
+  }
+}
+
+.pnom-btn-white-18 {
+  background-color: $white;
+  color: $black-10;
+  font-size: 18px;
+  border: none !important;
+  text-transform: capitalize;
   &:hover {
     background-color: $white;
     border: none;
