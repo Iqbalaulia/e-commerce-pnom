@@ -1,0 +1,61 @@
+.my_notification {
+  padding: 16px;
+
+  &_title {
+      font-weight: bold;
+      font-size: 28px;
+      text-transform: capitalize;
+      margin-bottom: 28px;
+      padding-left: 8px;
+      border-left: 10px solid $blue-9;
+      border-radius: 2px;
+  }
+
+  &_content {
+    &_title {
+      font-weight: bold;
+      font-size: 20px;
+      text-transform: capitalize;
+      margin-bottom: 18px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 14px;
+
+        .title {
+          font-size: 18px;
+          font-weight: 600;
+          color: $black-10;
+          text-transform: capitalize;
+        }
+
+        .sub_title {
+          font-size: 16px;
+          color: $black-6;
+        }
+
+        .checkbox-notification {
+          .custom-control-label {
+            &::before {
+              width: 20px !important;
+              height: 20px !important;
+            }
+
+            &::after {
+              width: 20px !important;
+              height: 20px !important;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

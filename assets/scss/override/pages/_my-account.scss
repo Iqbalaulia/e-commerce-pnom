@@ -6,6 +6,9 @@
     font-size: 28px;
     text-transform: capitalize;
     margin-bottom: 28px;
+    padding-left: 8px;
+    border-left: 10px solid $blue-9;
+    border-radius: 2px;
   }
 
   &_images {

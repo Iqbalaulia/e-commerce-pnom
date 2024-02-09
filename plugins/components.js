@@ -13,6 +13,7 @@ import FilterRelate from "~/components/home/filterRelate/index.vue";
 
 import MyAccountComponent from "~/components/user/myAccount/index.vue";
 import MyAddressComponent from "~/components/user/address/index.vue";
+import MyNotificationComponent from "~/components/user/notification/index.vue";
 
 import CustomerReviewComponent from "~/components/reviewCustomer/index.vue";
 
@@ -31,5 +32,6 @@ Vue.component("filter-relate", FilterRelate);
 
 Vue.component("my-account-component", MyAccountComponent);
 Vue.component("my-address-component", MyAddressComponent);
+Vue.component("my-notification-component", MyNotificationComponent);
 
 Vue.component("customer-review-component", CustomerReviewComponent);
