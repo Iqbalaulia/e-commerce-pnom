@@ -63,6 +63,7 @@
           <my-account-component v-if="menu === `akun-saya`" />
           <my-address-component v-if="menu === `alamat`"/>
           <my-notification-component v-if="menu === `pengaturan-notifikasi`" />
+          <my-dropshipper-component v-if="menu === `dropshipper`" />
         </div>
       </div>
     </div>

@@ -1,0 +1,101 @@
+.my_dropshipper {
+  padding: 16px;
+
+  .tabs_dropshipper {
+    .nav-tabs {
+      border-bottom: 4px solid $red-10 !important;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+
+      .nav-item {
+        margin-right: 10px;
+
+        a {
+          font-size: 20px;
+          color: $black-10;
+        }
+      }
+    }
+
+    .nav-link.active {
+      border-color: $blue-4 !important;
+      border-radius: 0 !important;
+      font-weight: bold !important;
+      background-color: $blue-4;
+    }
+
+    .data_tabs_list {
+      display: flex;
+      align-items:flex-start;
+
+      .images-cart {
+        width: 180px;
+        height: 180px;
+        border-radius: 4px;
+      }
+
+      .data_tabs_information {
+        padding: 0px 0px 0px 20px;
+
+        .title {
+          font-size: 20px;
+          font-weight: 800;
+          color: $black-10;
+
+          .status {
+            font-size: 14px;
+            color: $black-10;
+            background-color: $black-4;
+            padding: 6px 18px 6px 18px;
+            text-align: center;
+            font-weight: 400;
+            text-transform: capitalize;
+          }
+        }
+
+        .variasi {
+          font-size: 14px;
+          color: $black-10;
+          margin-top: 12px;
+        }
+
+
+        .number_order {
+          font-size: 14px;
+          color: $black-10;
+          margin-top: 6px;
+        }
+
+        .description {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          margin-top: 6px;
+
+          &_text {
+            padding: 0px 40px 0px 0px;
+            font-size: 16px;
+            color: $black-10;
+          }
+
+          &_nominal {
+            .discount {
+              font-size: 14px;
+              color: $black-6;
+              text-align: end;
+              text-decoration: line-through;
+            }
+
+            .total {
+              font-size: 24px;
+              font-weight: bold;
+              color: $black-10;
+            }
+          }
+        }
+      }
+
+
+    }
+  }
+}
