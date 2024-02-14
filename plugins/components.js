@@ -15,6 +15,7 @@ import MyAccountComponent from "~/components/user/myAccount/index.vue";
 import MyAddressComponent from "~/components/user/address/index.vue";
 import MyNotificationComponent from "~/components/user/notification/index.vue";
 import MyDropshipperComponent from "~/components/user/dropshipper/index.vue";
+import MyOrderComponent from "~/components/user/order/index.vue";
 
 import CustomerReviewComponent from "~/components/reviewCustomer/index.vue";
 
@@ -35,5 +36,6 @@ Vue.component("my-account-component", MyAccountComponent);
 Vue.component("my-address-component", MyAddressComponent);
 Vue.component("my-notification-component", MyNotificationComponent);
 Vue.component("my-dropshipper-component", MyDropshipperComponent);
+Vue.component("my-order-component", MyOrderComponent);
 
 Vue.component("customer-review-component", CustomerReviewComponent);

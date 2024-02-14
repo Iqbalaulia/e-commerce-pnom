@@ -47,23 +47,45 @@
               <li
                 @click="onChangeMenu(`pengaturan-notifikasi`)"
                 :class="
-                  $route.query.menu === `pengaturan-notifikasi` ? `sub_menu_active` : ``
+                  $route.query.menu === `pengaturan-notifikasi`
+                    ? `sub_menu_active`
+                    : ``
                 "
                 class="sub_menu"
               >
                 <i class="fa-solid fa-gears"></i>
                 Pengaturan Notifikasi
               </li>
-              <li class="title_menu">Pesanan saya</li>
-              <li class="title_menu">Wishlist</li>
+              <li
+                @click="onChangeMenu(`pesanan-saya`)"
+                :class="
+                  $route.query.menu === `pesanan-saya`
+                    ? `title_menu_active`
+                    : ``
+                "
+                class="title_menu"
+              >
+                Pesanan saya
+              </li>
+              <li
+                @click="onChangeMenu(`wishlist`)"
+                :class="
+                  $route.query.menu === `wishlist` ? `title_menu_active` : ``
+                "
+                class="title_menu"
+              >
+                Wishlist
+              </li>
             </ul>
           </div>
         </div>
         <div class="col-md-9">
           <my-account-component v-if="menu === `akun-saya`" />
-          <my-address-component v-if="menu === `alamat`"/>
+          <my-address-component v-if="menu === `alamat`" />
           <my-notification-component v-if="menu === `pengaturan-notifikasi`" />
           <my-dropshipper-component v-if="menu === `dropshipper`" />
+          <my-order-component v-if="menu === `pesanan-saya`" />
+
         </div>
       </div>
     </div>
@@ -79,7 +101,7 @@ export default {
     };
   },
   mounted() {
-    this.onChangeMenu(`akun-saya`)
+    this.onChangeMenu(`akun-saya`);
   },
   methods: {
     onChangeMenu(item) {

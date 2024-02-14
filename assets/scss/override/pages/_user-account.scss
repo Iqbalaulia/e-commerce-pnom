@@ -43,6 +43,18 @@
           .title_menu {
             font-size: 24px;
             font-weight: bold;
+
+            &:hover {
+              color: $blue-9;
+              font-weight: 700;
+              cursor: pointer;
+            }
+          }
+
+          .title_menu_active {
+            color: $blue-9;
+            font-weight: 700;
+            cursor: pointer;
           }
 
           .sub_menu {
