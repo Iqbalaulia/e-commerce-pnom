@@ -7,10 +7,47 @@
           <div class="detail_product_content_thumbnail">
             <img
               class="thumbnail"
-              src="~/assets/images/new-product/new-product-1.png"
+              :src="imagesProduct"
               alt="thumbnail"
             />
           </div>
+          <VueSlickCarousel v-bind="settings" class="mt-3 carousel-product">
+            <div @click="changeProductImage('/_nuxt/assets/images/new-product/new-product-2.png')">
+              <img
+                class="w-100"
+                src="~/assets/images/new-product/new-product-2.png"
+                alt="thumbnail"
+              />
+            </div>
+            <div @click="changeProductImage('/_nuxt/assets/images/new-product/new-product-3.png')">
+              <img
+              class="w-100"
+                src="~/assets/images/new-product/new-product-3.png"
+                alt="thumbnail"
+              />
+            </div>
+            <div @click="changeProductImage('/_nuxt/assets/images/new-product/new-product-4.png')">
+              <img
+              class="w-100"
+                src="~/assets/images/new-product/new-product-4.png"
+                alt="thumbnail"
+              />
+            </div>
+            <div @click="changeProductImage('/_nuxt/assets/images/new-product/new-product-3.png')">
+              <img
+              class="w-100"
+                src="~/assets/images/new-product/new-product-3.png"
+                alt="thumbnail"
+              />
+            </div>
+            <div @click="changeProductImage('/_nuxt/assets/images/new-product/new-product-1.png')">
+              <img
+              class="w-100"
+                src="~/assets/images/new-product/new-product-1.png"
+                alt="thumbnail"
+              />
+            </div>
+          </VueSlickCarousel>
         </div>
         <div class="col-md-7">
           <div class="detail_product_content_detail">
@@ -166,6 +203,8 @@
 </template>
 
 <script>
+import VueSlickCarousel from "vue-slick-carousel";
+
 import {
   mockDataMotif,
   mockDataBahan,
@@ -176,13 +215,27 @@ export default {
   name: "DetailProduct",
   data() {
     return {
+      imagesProduct:"~/assets/images/new-product/new-product-2.png",
       mockDataNotif: mockDataMotif,
       mockDataBahan: mockDataBahan,
       mockDataRatingProductDetail: mockDataRatingProductDetail,
       selectedMotif: null,
       selectedBahan: null,
+      settings: {
+        focusOnSelect: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 5,
+        touchThreshold: 5,
+      },
     };
   },
-  methods: {},
+  components: { VueSlickCarousel },
+  methods: {
+    changeProductImage(item) {
+      this.imagesProduct = item
+    }
+  },
 };
 </script>

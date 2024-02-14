@@ -26,6 +26,8 @@ export default {
 
   css: [
     '~/assets/scss/main.scss',
+    'vue-slick-carousel/dist/vue-slick-carousel-theme.css',
+    'vue-slick-carousel/dist/vue-slick-carousel.css',
     '@fortawesome/fontawesome-free/css/all.css',
   ],
 
