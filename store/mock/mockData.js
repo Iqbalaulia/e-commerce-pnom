@@ -253,3 +253,22 @@ export const mockDataDropshipper = {
     },
   ],
 };
+
+export const mockDataCarouselProductDetail = [
+  {
+    imagesUrl: "/_nuxt/assets/images/new-product/new-product-2.png",
+    imagesClicked: "/_nuxt/assets/images/new-product/new-product-2.png"
+  },
+  {
+    imagesUrl: "/_nuxt/assets/images/new-product/new-product-3.png",
+    imagesClicked: "/_nuxt/assets/images/new-product/new-product-3.png"
+  },
+  {
+    imagesUrl: "/_nuxt/assets/images/new-product/new-product-4.png",
+    imagesClicked: "/_nuxt/assets/images/new-product/new-product-4.png"
+  },
+  {
+    imagesUrl: "/_nuxt/assets/images/new-product/new-product-1.png",
+    imagesClicked: "/_nuxt/assets/images/new-product/new-product-1.png"
+  }
+]

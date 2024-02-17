@@ -5,45 +5,19 @@
       <div class="row">
         <div class="col-md-5">
           <div class="detail_product_content_thumbnail">
-            <img
-              class="thumbnail"
-              :src="imagesProduct"
-              alt="thumbnail"
-            />
+            <img class="thumbnail" :src="imagesProduct" alt="thumbnail" />
           </div>
           <VueSlickCarousel v-bind="settings" class="mt-3 carousel-product">
-            <div @click="changeProductImage('/_nuxt/assets/images/new-product/new-product-2.png')">
+            <div
+              v-for="(itemImages, indexImages) in mockDataCarouselProductDetail"
+              :key="indexImages"
+              @click="
+                changeProductImage(itemImages.imagesClicked)
+              "
+            >
               <img
                 class="w-100"
-                src="~/assets/images/new-product/new-product-2.png"
-                alt="thumbnail"
-              />
-            </div>
-            <div @click="changeProductImage('/_nuxt/assets/images/new-product/new-product-3.png')">
-              <img
-              class="w-100"
-                src="~/assets/images/new-product/new-product-3.png"
-                alt="thumbnail"
-              />
-            </div>
-            <div @click="changeProductImage('/_nuxt/assets/images/new-product/new-product-4.png')">
-              <img
-              class="w-100"
-                src="~/assets/images/new-product/new-product-4.png"
-                alt="thumbnail"
-              />
-            </div>
-            <div @click="changeProductImage('/_nuxt/assets/images/new-product/new-product-3.png')">
-              <img
-              class="w-100"
-                src="~/assets/images/new-product/new-product-3.png"
-                alt="thumbnail"
-              />
-            </div>
-            <div @click="changeProductImage('/_nuxt/assets/images/new-product/new-product-1.png')">
-              <img
-              class="w-100"
-                src="~/assets/images/new-product/new-product-1.png"
+                :src="itemImages.imagesUrl"
                 alt="thumbnail"
               />
             </div>
@@ -143,7 +117,7 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row mt-4">
         <div class="col-md-12">
           <div class="description_product">
             <label for="">Deskripsi Produk</label>
@@ -209,33 +183,30 @@ import {
   mockDataMotif,
   mockDataBahan,
   mockDataRatingProductDetail,
+  mockDataCarouselProductDetail,
 } from "~/store/mock/mockData";
+
+import { carouselProduct } from "~/plugins/carousel";
 
 export default {
   name: "DetailProduct",
   data() {
     return {
-      imagesProduct:"~/assets/images/new-product/new-product-2.png",
+      imagesProduct: "/_nuxt/assets/images/new-product/new-product-2.png",
       mockDataNotif: mockDataMotif,
       mockDataBahan: mockDataBahan,
+      mockDataCarouselProductDetail: mockDataCarouselProductDetail,
       mockDataRatingProductDetail: mockDataRatingProductDetail,
+      settings: carouselProduct,
       selectedMotif: null,
       selectedBahan: null,
-      settings: {
-        focusOnSelect: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 5,
-        touchThreshold: 5,
-      },
     };
   },
   components: { VueSlickCarousel },
   methods: {
     changeProductImage(item) {
-      this.imagesProduct = item
-    }
+      this.imagesProduct = item;
+    },
   },
 };
 </script>
