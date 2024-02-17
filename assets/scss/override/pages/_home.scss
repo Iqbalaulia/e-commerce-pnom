@@ -1,11 +1,36 @@
 .home {
-    &_banner {
-        padding: 0px 180px 0px 180px;
+  &_banner {
+    padding: 0px 120px 0px 120px;
 
-        .images-banner {
-            margin: 100px 0px 100px 0px;
-            width: 100%;
-        }
+    .images-banner {
+      margin: 100px 0px 0px 0px;
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
     }
+  }
 
+  .slick-prev {
+    z-index: 1;
+    left: 50px !important;
+    &::before {
+      color: $white !important;
+      font-size: 30px !important;
+    }
+  }
+
+  .slick-next {
+    z-index: 1;
+    right: 50px !important;
+    &::before {
+      color: $white !important;
+      font-size: 30px !important;
+    }
+  }
+
+  .slick-dots {
+    .slick-active {
+
+    }
+  }
 }
