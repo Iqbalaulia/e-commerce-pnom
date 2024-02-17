@@ -33,6 +33,7 @@ export default {
 
   plugins: [
     '~/plugins/components.js',
+    '~/plugins/aos.js',
   ],
 
   components: true,

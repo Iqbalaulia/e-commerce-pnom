@@ -272,3 +272,54 @@ export const mockDataCarouselProductDetail = [
     imagesClicked: "/_nuxt/assets/images/new-product/new-product-1.png"
   }
 ]
+
+export const mockDataFilterCategory = [
+  {
+    imagesUrl: '/_nuxt/assets/images/category/kategori-1.png',
+    title: 'tankpad'
+  },
+  {
+    imagesUrl: '/_nuxt/assets/images/category/kategori-2.png',
+    title: 'tankpad'
+  },
+  {
+    imagesUrl: '/_nuxt/assets/images/category/kategori-3.png',
+    title: 'tankpad'
+  },
+  {
+    imagesUrl: '/_nuxt/assets/images/category/kategori-4.png',
+    title: 'tankpad'
+  },
+  {
+    imagesUrl: '/_nuxt/assets/images/category/kategori-5.png',
+    title: 'tankpad'
+  },
+  {
+    imagesUrl: '/_nuxt/assets/images/category/kategori-6.png',
+    title: 'tankpad'
+  },
+  {
+    imagesUrl: '/_nuxt/assets/images/category/kategori-7.png',
+    title: 'tankpad'
+  },
+  {
+    imagesUrl: '/_nuxt/assets/images/category/kategori-8.png',
+    title: 'tankpad'
+  },
+  {
+    imagesUrl: '/_nuxt/assets/images/category/kategori-9.png',
+    title: 'tankpad'
+  },
+  {
+    imagesUrl: '/_nuxt/assets/images/category/kategori-10.png',
+    title: 'tankpad'
+  },
+  {
+    imagesUrl: '/_nuxt/assets/images/category/kategori-11.png',
+    title: 'tankpad'
+  },
+  {
+    imagesUrl: '/_nuxt/assets/images/category/kategori-12.png',
+    title: 'tankpad'
+  }
+]
