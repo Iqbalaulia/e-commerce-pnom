@@ -63,7 +63,7 @@ export default {
   },
   env: {
     baseURL: process.env.PNOM_BASE_URL,
-    versionName: "1.17", //rubah versi di sini
-    versionCode: 17, // dan di sini
+    versionName: "1", //rubah versi di sini
+    versionCode: 1, // dan di sini
   },
 }
