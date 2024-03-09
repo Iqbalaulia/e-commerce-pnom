@@ -40,12 +40,25 @@
 <script>
 import { mockDataFilterCategory } from "~/store/mock/mockData";
 
+import { crudMethods } from '~/store/helpers';
+
 export default {
   name: "FilterCategory",
   data() {
     return {
       mockDataFilterCategory: mockDataFilterCategory,
     };
+  },
+  mounted() {
+    this.getListCategory()
+  },
+  methods: {
+    ...crudMethods,
+    async getListCategory () {
+      await this.getData({
+        url: `/v1.0/homepage/product/category`
+      })
+    }
   },
 };
 </script>

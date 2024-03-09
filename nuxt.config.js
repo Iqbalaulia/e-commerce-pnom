@@ -44,6 +44,7 @@ export default {
 
   modules: [
     'bootstrap-vue/nuxt',
+    '@nuxtjs/axios'
   ],
 
   bootstrapVue: {
@@ -59,5 +60,10 @@ export default {
         implementation: require('sass'),
       }
     }
+  },
+  env: {
+    baseURL: process.env.PNOM_BASE_URL,
+    versionName: "1.17", //rubah versi di sini
+    versionCode: 17, // dan di sini
   },
 }
