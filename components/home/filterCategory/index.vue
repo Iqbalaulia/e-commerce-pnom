@@ -14,8 +14,8 @@
       <b-row>
         <b-col
           sm="2"
-          v-for="(itemCategory, indexCategory) in mockDataFilterCategory"
-          :key="indexCategory"
+          v-for="(itemCategory, indexCategory) in dataCategory"
+          :key="indexCategory + itemCategory.uuid"
           data-aos="fade-in"
           :data-aos-duration="indexCategory + 200"
           data-aos-easing="ease-in-out"
@@ -24,11 +24,11 @@
           <a href="#" class="section_content">
             <img
               class="images-filter"
-              :src="itemCategory.imagesUrl"
-              alt="category-1"
+              :src="itemCategory.imageThumb"
+              :alt="`category-${itemCategory.slug}`"
             />
             <div class="title">
-              <label for=""> {{ itemCategory.title }} </label>
+              <label :for="itemCategory.name"> {{ itemCategory.name }} </label>
             </div>
           </a>
         </b-col>
@@ -40,25 +40,31 @@
 <script>
 import { mockDataFilterCategory } from "~/store/mock/mockData";
 
-import { crudMethods } from '~/store/helpers';
+import { crudMethods } from "~/store/helpers";
 
 export default {
   name: "FilterCategory",
   data() {
     return {
       mockDataFilterCategory: mockDataFilterCategory,
+      dataCategory: [],
     };
   },
   mounted() {
-    this.getListCategory()
+    this.getListCategory();
   },
   methods: {
     ...crudMethods,
-    async getListCategory () {
-      await this.getData({
-        url: `/v1.0/homepage/product/category`
-      })
-    }
+    async getListCategory() {
+      try {
+        let response = await this.getData({
+          url: `/v1.0/homepage/product/category`,
+        });
+        this.dataCategory = response?.data?.data;
+      } catch (error) {
+        console.error(JSON.stringify(error));
+      }
+    },
   },
 };
 </script>
