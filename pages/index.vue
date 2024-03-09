@@ -2,16 +2,12 @@
   <div class="home">
     <navbar />
     <div class="home_banner">
-      <VueSlickCarousel v-bind="settings">
+      <VueSlickCarousel v-bind="settings" v-if="dataBanner.length > 0">
         <div
           v-for="(itemBanner, indexBanner) in dataBanner"
           :key="indexBanner + itemBanner.uuid"
         >
-          <img
-            class="images-banner"
-            :src="itemBanner.image"
-            alt="banner-1"
-          />
+          <img class="images-banner" :src="itemBanner.image" alt="banner-1" />
         </div>
       </VueSlickCarousel>
     </div>
@@ -51,9 +47,11 @@ export default {
     return {
       settings: carouselBanner,
       dataBanner: [],
+      loading: false,
     };
   },
   components: { VueSlickCarousel },
+  created() {},
   mounted() {
     this.getListBanner();
   },
@@ -61,12 +59,15 @@ export default {
     ...crudMethods,
     async getListBanner() {
       try {
+        this.loading = true;
         let response = await this.getData({
           url: `/v1.0/homepage/banner`,
         });
         this.dataBanner = response?.data?.data;
       } catch (error) {
         console.error(JSON.stringify(error));
+      } finally {
+        this.loading = false;
       }
     },
   },
