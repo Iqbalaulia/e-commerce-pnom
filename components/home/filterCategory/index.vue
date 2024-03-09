@@ -13,13 +13,13 @@
     <div class="pnom-filter-category_content">
       <b-row>
         <b-col
-          sm="2"
           v-for="(itemCategory, indexCategory) in dataCategory"
           :key="indexCategory + itemCategory.uuid"
-          data-aos="fade-in"
           :data-aos-duration="indexCategory + 200"
+          data-aos="fade-in"
           data-aos-easing="ease-in-out"
           class="mb-4"
+          sm="2"
         >
           <a href="#" class="section_content">
             <img
@@ -39,7 +39,6 @@
 
 <script>
 import { mockDataFilterCategory } from "~/store/mock/mockData";
-
 import { crudMethods } from "~/store/helpers";
 
 export default {

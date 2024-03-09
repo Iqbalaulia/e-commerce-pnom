@@ -3,17 +3,13 @@
     <navbar />
     <div class="home_banner">
       <VueSlickCarousel v-bind="settings">
-        <div>
+        <div
+          v-for="(itemBanner, indexBanner) in dataBanner"
+          :key="indexBanner + itemBanner.uuid"
+        >
           <img
             class="images-banner"
-            src="~/assets/images/banner/banner-1.png"
-            alt="banner-1"
-          />
-        </div>
-        <div>
-          <img
-            class="images-banner"
-            src="~/assets/images/banner/banner.png"
+            :src="itemBanner.image"
             alt="banner-1"
           />
         </div>
@@ -44,16 +40,35 @@
 
 <script>
 import VueSlickCarousel from "vue-slick-carousel";
+
 import { carouselBanner } from "~/plugins/carousel";
+
+import { crudMethods } from "~/store/helpers";
 
 export default {
   name: "IndexPage",
   data() {
     return {
       settings: carouselBanner,
+      dataBanner: [],
     };
   },
   components: { VueSlickCarousel },
-  methods: {},
+  mounted() {
+    this.getListBanner();
+  },
+  methods: {
+    ...crudMethods,
+    async getListBanner() {
+      try {
+        let response = await this.getData({
+          url: `/v1.0/homepage/banner`,
+        });
+        this.dataBanner = response?.data?.data;
+      } catch (error) {
+        console.error(JSON.stringify(error));
+      }
+    },
+  },
 };
 </script>
