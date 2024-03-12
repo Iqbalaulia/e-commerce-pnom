@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/p/striping-beat-pelindung", {data:[{}],fetch:{},mutations:[]});
