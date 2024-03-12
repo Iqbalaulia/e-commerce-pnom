@@ -26,7 +26,7 @@
               alt="category-1"
             />
             <div class="section_content_title">
-              {{ itemRecommendation.name }}
+              {{ $substring(itemRecommendation.name, 80) }}
             </div>
             <div class="section_content_rupiah">
               {{ itemRecommendation.price }}
@@ -41,7 +41,7 @@
                   ★
                 </span>
               </div>
-              <div class="total">1.2K Terjual/bulan</div>
+              <div class="total">1.2K Terjual</div>
             </div>
           </a>
         </b-col>

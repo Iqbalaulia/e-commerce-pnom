@@ -33,7 +33,7 @@
                                     ★
                                 </span>
                             </div>
-                            <div class="total">1.2K Terjual/bulan</div>
+                            <div class="total">1.2K Terjual</div>
                         </div>
                     </a>
                 </b-col>
@@ -56,7 +56,7 @@
                                     ★
                                 </span>
                             </div>
-                            <div class="total">1.2K Terjual/bulan</div>
+                            <div class="total">1.2K Terjual</div>
                         </div>
                     </a>
                 </b-col>
@@ -79,7 +79,7 @@
                                     ★
                                 </span>
                             </div>
-                            <div class="total">1.2K Terjual/bulan</div>
+                            <div class="total">1.2K Terjual</div>
                         </div>
                     </a>
                 </b-col>
@@ -102,7 +102,7 @@
                                     ★
                                 </span>
                             </div>
-                            <div class="total">1.2K Terjual/bulan</div>
+                            <div class="total">1.2K Terjual</div>
                         </div>
                     </a>
                 </b-col>

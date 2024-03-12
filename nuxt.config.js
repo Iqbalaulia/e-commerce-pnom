@@ -34,6 +34,7 @@ export default {
   plugins: [
     '~/plugins/components.js',
     '~/plugins/aos.js',
+    '~/utils/helpers.js'
   ],
 
   components: true,

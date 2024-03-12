@@ -14,7 +14,7 @@
       <b-row>
         <b-col
           md="3"
-          v-for="(itemProduct, indexProduct) in dataNewProduct.slice(0,4)"
+          v-for="(itemProduct, indexProduct) in dataNewProduct.slice(0, 4)"
           :key="indexProduct + itemProduct.uuid"
         >
           <NuxtLink :to="`/p/${itemProduct.slug}`" class="section_content">
@@ -24,16 +24,20 @@
               alt="category-1"
             />
             <div class="section_content_title">
-              {{itemProduct.name}}
+              {{ $substring(itemProduct.name, 80) }}
             </div>
-            <div class="section_content_rupiah">{{itemProduct.price}}</div>
+            <div class="section_content_rupiah">{{ itemProduct.price }}</div>
             <div class="section_content_rating">
               <div class="star-rating">
-                <span v-for="star in [itemProduct.stars]" :key="star" class="star">
+                <span
+                  v-for="star in [itemProduct.stars]"
+                  :key="star"
+                  class="star"
+                >
                   ★
                 </span>
               </div>
-              <div class="total">1.2K Terjual/bulan</div>
+              <div class="total">1.2K Terjual</div>
             </div>
           </NuxtLink>
         </b-col>
