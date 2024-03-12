@@ -2,17 +2,17 @@
   "NuxtLogo": {
     "description": "Auto imported from components/NuxtLogo.vue"
   },
+  "LayoutTutorial": {
+    "description": "Auto imported from components/layout/Tutorial.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/header/index.vue"
+  },
   "Footer": {
     "description": "Auto imported from components/footer/Footer.vue"
   },
   "FooterLogin": {
     "description": "Auto imported from components/footer/FooterLogin.vue"
-  },
-  "Header": {
-    "description": "Auto imported from components/header/index.vue"
-  },
-  "LayoutTutorial": {
-    "description": "Auto imported from components/layout/Tutorial.vue"
   },
   "Navbar": {
     "description": "Auto imported from components/navbar/index.vue"
