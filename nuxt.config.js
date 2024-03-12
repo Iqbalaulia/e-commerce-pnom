@@ -1,5 +1,6 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  buildDir: "build",
   head: {
     title: "PNOM Sticklite",
     htmlAttrs: {
@@ -48,7 +49,6 @@ export default {
   },
 
   build: {
-    buildDir: "build",
     loaders: {
       sass: {
         implementation: require("sass"),
