@@ -29,7 +29,7 @@
             <div class="section_content_rupiah">{{itemProduct.price}}</div>
             <div class="section_content_rating">
               <div class="star-rating">
-                <span v-for="star in itemProduct.stars" :key="star" class="star">
+                <span v-for="star in [itemProduct.stars]" :key="star" class="star">
                   ★
                 </span>
               </div>
