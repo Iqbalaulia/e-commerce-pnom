@@ -1,6 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   buildDir: "build",
+  target:'static',
   head: {
     title: "PNOM Sticklite",
     htmlAttrs: {
