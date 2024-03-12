@@ -1,0 +1,56 @@
+{
+  "NuxtLogo": {
+    "description": "Auto imported from components/NuxtLogo.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/footer/Footer.vue"
+  },
+  "FooterLogin": {
+    "description": "Auto imported from components/footer/FooterLogin.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/header/index.vue"
+  },
+  "LayoutTutorial": {
+    "description": "Auto imported from components/layout/Tutorial.vue"
+  },
+  "Navbar": {
+    "description": "Auto imported from components/navbar/index.vue"
+  },
+  "ReviewCustomer": {
+    "description": "Auto imported from components/reviewCustomer/index.vue"
+  },
+  "HomeFilterArticle": {
+    "description": "Auto imported from components/home/filterArticle/index.vue"
+  },
+  "HomeFilterCategory": {
+    "description": "Auto imported from components/home/filterCategory/index.vue"
+  },
+  "HomeFilterNewProduct": {
+    "description": "Auto imported from components/home/filterNewProduct/index.vue"
+  },
+  "HomeFilterPopular": {
+    "description": "Auto imported from components/home/filterPopular/index.vue"
+  },
+  "HomeFilterRecomanded": {
+    "description": "Auto imported from components/home/filterRecomanded/index.vue"
+  },
+  "HomeFilterRelate": {
+    "description": "Auto imported from components/home/filterRelate/index.vue"
+  },
+  "UserAddress": {
+    "description": "Auto imported from components/user/address/index.vue"
+  },
+  "UserDropshipper": {
+    "description": "Auto imported from components/user/dropshipper/index.vue"
+  },
+  "UserMyAccount": {
+    "description": "Auto imported from components/user/myAccount/index.vue"
+  },
+  "UserNotification": {
+    "description": "Auto imported from components/user/notification/index.vue"
+  },
+  "UserOrder": {
+    "description": "Auto imported from components/user/order/index.vue"
+  }
+}
