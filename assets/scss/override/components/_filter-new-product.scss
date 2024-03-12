@@ -16,7 +16,7 @@
                 margin-right: 8px;
                 border-radius: 4px;
             }
-    
+
             label {
                 font-weight: bold;
                 text-transform: uppercase;
@@ -55,11 +55,14 @@
                 text-transform: uppercase;
                 line-height: 20px;
                 color: $black-10;
+                height: 70px;
             }
 
             &_rupiah {
                 margin-top: 2px;
                 color: $red-6;
+                font-weight: bold;
+                font-size: 20px;
             }
 
             &_rating {
@@ -73,7 +76,7 @@
                       color: $yellow-10 !important;
                       font-size: 18px;
 
-                  
+
                       &:hover {
                         cursor: pointer;
                       }
@@ -86,6 +89,6 @@
                 }
             }
         }
-        
+
     }
 }
