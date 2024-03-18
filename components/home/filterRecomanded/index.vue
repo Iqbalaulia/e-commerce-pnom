@@ -34,14 +34,14 @@
             <div class="section_content_rating">
               <div class="star-rating">
                 <span
-                  v-for="star in [itemRecommendation.stars]"
+                  v-for="star in [itemRecommendation?.stars.toString()]"
                   :key="star"
                   class="star"
                 >
                   ★
                 </span>
               </div>
-              <div class="total">1.2K Terjual</div>
+              <div class="total">{{ itemRecommendation.sold }} Terjual</div>
             </div>
           </a>
         </b-col>
@@ -69,7 +69,7 @@ export default {
     async getListCategory() {
       try {
         let response = await this.getData({
-          url: `/v1.0/homepage/product/recommendation`,
+          url: `/v1.0/product/recommendation`,
         });
         this.dataProductRecomended = response?.data?.data;
       } catch (error) {

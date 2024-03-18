@@ -30,14 +30,14 @@
             <div class="section_content_rating">
               <div class="star-rating">
                 <span
-                  v-for="star in [itemProduct.stars]"
+                  v-for="star in [itemProduct?.stars.toString()]"
                   :key="star"
                   class="star"
                 >
                   ★
                 </span>
               </div>
-              <div class="total">1.2K Terjual</div>
+              <div class="total">{{ itemProduct.sold }} Terjual</div>
             </div>
           </NuxtLink>
         </b-col>
@@ -64,7 +64,7 @@ export default {
     async getListNewProduct() {
       try {
         let response = await this.getData({
-          url: `/v1.0/homepage/product/latest`,
+          url: `/v1.0/product/latest`,
         });
         this.dataNewProduct = response?.data?.data;
       } catch (error) {

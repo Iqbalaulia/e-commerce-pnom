@@ -61,7 +61,7 @@ export default {
       try {
         this.loading = true;
         let response = await this.getData({
-          url: `/v1.0/homepage/banner`,
+          url: `/v1.0/banner`,
         });
         this.dataBanner = response?.data?.data;
       } catch (error) {

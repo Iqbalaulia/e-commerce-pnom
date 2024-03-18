@@ -1,118 +1,158 @@
 .footer-newslater {
-    background-color: $blue-10;
-    padding: 40px 150px;
+  background-color: $blue-10;
+  padding: 40px 150px;
 
-    .label {
-        margin-top: 50px;
-        label {
-            font-size: 18px;
-            font-weight: bold;
-            color: $white;
-        }
+  .label {
+    margin-top: 50px;
+    label {
+      font-size: 18px;
+      font-weight: bold;
+      color: $white;
     }
+  }
 
-    &_title {
-        display: flex;
-        justify-content: center;
-        color: $white;
-        font-size: 42px;
-        font-weight: bold;
-        text-transform: capitalize;
+  &_title {
+    display: flex;
+    justify-content: center;
+    color: $white;
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+  &_action {
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+
+    button {
+      width: 200px;
     }
-
-    &_action {
-        display: flex;
-        justify-content: center;
-        margin-top: 14px;
-
-        button {
-            width: 200px;
-        }
-    }
+  }
 }
 
 .footer {
-    background-color: $blue-9;
-    padding: 110px 165px 110px 165px;
+  background-color: $blue-9;
+  padding: 110px 165px 110px 165px;
 
-    &_about {
-        label {
-            font-size: 24px;
-            font-weight: bold;
-            color: $white;
-        }
-
-        p {
-            font-size: 16px;
-            color: $white;
-        }
-
-        .location {
-            font-size: 16px;
-            color: $white;
-            line-height: 30px;
-        }
-
-        .email {
-            font-size: 16px;
-            color: $white;
-            line-height: 30px;
-
-        }
-
-        .phone {
-            font-size: 16px;
-            color: $white;
-            line-height: 30px;
-
-        }
+  &_about {
+    label {
+      font-size: 24px;
+      font-weight: bold;
+      color: $white;
     }
 
-    &_category {
-        label {
-            font-size: 24px;
-            font-weight: bold;
-            color: $white;
-        }
+    p {
+      font-size: 16px;
+      color: $white;
     }
 
-    &_store_information {
-        label {
-            font-size: 24px;
-            font-weight: bold;
-            color: $white;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-
-            li {
-                font-size: 16px;
-                color: $white;
-                line-height: 40px;
-            }
-        }
+    .location {
+      font-size: 16px;
+      color: $white;
+      line-height: 30px;
     }
 
-    &_maps {
-        .maps {
-            iframe {
-                height: 410px;
-                width: 100%;
-            }
-        }
+    .email {
+      font-size: 16px;
+      color: $white;
+      line-height: 30px;
     }
 
+    .phone {
+      font-size: 16px;
+      color: $white;
+      line-height: 30px;
+    }
+
+    .custom_html {
+      h1 {
+        font-size: 18px;
+        font-weight: bold;
+        color: $white;
+      }
+
+      h2 {
+        font-size: 18px;
+        font-weight: bold;
+        color: $white;
+      }
+
+      p {
+        margin-bottom: 12px !important;
+      }
+
+      ul {
+        li {
+          font-size: 16px;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &_category {
+    label {
+      font-size: 24px;
+      font-weight: bold;
+      color: $white;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      line-height: 24px;
+
+      li {
+        font-size: 16px;
+
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &_store_information {
+    label {
+      font-size: 24px;
+      font-weight: bold;
+      color: $white;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        font-size: 16px;
+        color: $white;
+        line-height: 40px;
+
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &_maps {
+    .maps {
+      iframe {
+        height: 410px;
+        width: 100%;
+      }
+    }
+  }
 }
 
 .footer_content {
-    padding: 20px 18px;
-    display: flex;
-    justify-content: center;
+  padding: 20px 18px;
+  display: flex;
+  justify-content: center;
 
-    &_identitas {
-        font-weight: 500;
-        font-size: 18px;
-    }
+  &_identitas {
+    font-weight: 500;
+    font-size: 18px;
+  }
 }

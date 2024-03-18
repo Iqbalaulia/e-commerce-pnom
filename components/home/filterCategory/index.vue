@@ -57,7 +57,7 @@ export default {
     async getListCategory() {
       try {
         let response = await this.getData({
-          url: `/v1.0/homepage/category`,
+          url: `/v1.0/category`,
         });
         this.dataCategory = response?.data?.data;
       } catch (error) {
