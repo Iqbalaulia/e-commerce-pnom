@@ -18,6 +18,7 @@ import MyDropshipperComponent from "~/components/user/dropshipper/index.vue";
 import MyOrderComponent from "~/components/user/order/index.vue";
 
 import CustomerReviewComponent from "~/components/reviewCustomer/index.vue";
+import EmptyStateList from "~/components/emptyState/EmptyStateList.vue";
 
 Vue.component("Tutorial", Tutorial);
 Vue.component("header-login", Header);
@@ -39,3 +40,4 @@ Vue.component("my-dropshipper-component", MyDropshipperComponent);
 Vue.component("my-order-component", MyOrderComponent);
 
 Vue.component("customer-review-component", CustomerReviewComponent);
+Vue.component("empty-state-list", EmptyStateList);

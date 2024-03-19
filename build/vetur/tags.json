@@ -2,14 +2,17 @@
   "NuxtLogo": {
     "description": "Auto imported from components/NuxtLogo.vue"
   },
+  "EmptyStateList": {
+    "description": "Auto imported from components/emptyState/EmptyStateList.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/header/index.vue"
+  },
   "Footer": {
     "description": "Auto imported from components/footer/Footer.vue"
   },
   "FooterLogin": {
     "description": "Auto imported from components/footer/FooterLogin.vue"
-  },
-  "Header": {
-    "description": "Auto imported from components/header/index.vue"
   },
   "LayoutTutorial": {
     "description": "Auto imported from components/layout/Tutorial.vue"
@@ -23,11 +26,11 @@
   "HomeFilterArticle": {
     "description": "Auto imported from components/home/filterArticle/index.vue"
   },
-  "HomeFilterNewProduct": {
-    "description": "Auto imported from components/home/filterNewProduct/index.vue"
-  },
   "HomeFilterCategory": {
     "description": "Auto imported from components/home/filterCategory/index.vue"
+  },
+  "HomeFilterNewProduct": {
+    "description": "Auto imported from components/home/filterNewProduct/index.vue"
   },
   "HomeFilterPopular": {
     "description": "Auto imported from components/home/filterPopular/index.vue"

@@ -42,6 +42,13 @@
     "_name": "_c8d65500"
   },
   {
+    "name": "c-category",
+    "path": "/c/:category?",
+    "component": "C:\\\\Users\\\\miqba\\\\Documents\\\\Project\\\\Vue\\\\e-commerce-pnom\\\\pages\\\\c\\\\_category.vue",
+    "chunkName": "pages/c/_category",
+    "_name": "_6400645c"
+  },
+  {
     "name": "p-product",
     "path": "/p/:product?",
     "component": "C:\\\\Users\\\\miqba\\\\Documents\\\\Project\\\\Vue\\\\e-commerce-pnom\\\\pages\\\\p\\\\_product.vue",

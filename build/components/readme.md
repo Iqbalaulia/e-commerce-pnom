@@ -7,15 +7,16 @@ You can directly use them in pages and other components without the need to impo
 **Tip:** If a component is conditionally rendered with `v-if` and is big, it is better to use `Lazy` or `lazy-` prefix to lazy load.
 
 - `<NuxtLogo>` | `<nuxt-logo>` (components/NuxtLogo.vue)
+- `<EmptyStateList>` | `<empty-state-list>` (components/emptyState/EmptyStateList.vue)
+- `<Header>` | `<header>` (components/header/index.vue)
 - `<Footer>` | `<footer>` (components/footer/Footer.vue)
 - `<FooterLogin>` | `<footer-login>` (components/footer/FooterLogin.vue)
-- `<Header>` | `<header>` (components/header/index.vue)
 - `<LayoutTutorial>` | `<layout-tutorial>` (components/layout/Tutorial.vue)
 - `<Navbar>` | `<navbar>` (components/navbar/index.vue)
 - `<ReviewCustomer>` | `<review-customer>` (components/reviewCustomer/index.vue)
 - `<HomeFilterArticle>` | `<home-filter-article>` (components/home/filterArticle/index.vue)
-- `<HomeFilterNewProduct>` | `<home-filter-new-product>` (components/home/filterNewProduct/index.vue)
 - `<HomeFilterCategory>` | `<home-filter-category>` (components/home/filterCategory/index.vue)
+- `<HomeFilterNewProduct>` | `<home-filter-new-product>` (components/home/filterNewProduct/index.vue)
 - `<HomeFilterPopular>` | `<home-filter-popular>` (components/home/filterPopular/index.vue)
 - `<HomeFilterRecomanded>` | `<home-filter-recomanded>` (components/home/filterRecomanded/index.vue)
 - `<HomeFilterRelate>` | `<home-filter-relate>` (components/home/filterRelate/index.vue)

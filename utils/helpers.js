@@ -7,5 +7,15 @@ export default (context, inject) => {
     return dots;
   };
 
+  const substring_40 = (description, number) => {
+    let dots = "";
+    if (description.length > 36)
+      dots = description.substring(0, number) + "....";
+    else dots = description;
+    return dots;
+  };
+
   inject("substring", substring);
+  inject("substring_40", substring_40);
+
 };

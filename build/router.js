@@ -10,6 +10,7 @@ const _941649f8 = () => interopDefault(import('..\\pages\\daftar\\index.vue' /* 
 const _5470540b = () => interopDefault(import('..\\pages\\login\\index.vue' /* webpackChunkName: "pages/login/index" */))
 const _33559092 = () => interopDefault(import('..\\pages\\user\\account\\index.vue' /* webpackChunkName: "pages/user/account/index" */))
 const _c8d65500 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _6400645c = () => interopDefault(import('..\\pages\\c\\_category.vue' /* webpackChunkName: "pages/c/_category" */))
 const _530abe64 = () => interopDefault(import('..\\pages\\p\\_product.vue' /* webpackChunkName: "pages/p/_product" */))
 
 const emptyFn = () => {}
@@ -47,6 +48,10 @@ export const routerOptions = {
     path: "/",
     component: _c8d65500,
     name: "index"
+  }, {
+    path: "/c/:category?",
+    component: _6400645c,
+    name: "c-category"
   }, {
     path: "/p/:product?",
     component: _530abe64,

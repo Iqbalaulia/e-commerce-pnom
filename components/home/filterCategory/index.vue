@@ -21,7 +21,7 @@
           class="mb-4"
           sm="2"
         >
-          <a href="#" class="section_content">
+          <NuxtLink :to="`/c/${itemCategory?.slug}`" class="section_content">
             <img
               class="images-filter"
               :src="itemCategory.imageThumb"
@@ -30,7 +30,7 @@
             <div class="title">
               <label :for="itemCategory.name"> {{ itemCategory.name }} </label>
             </div>
-          </a>
+          </NuxtLink>
         </b-col>
       </b-row>
     </div>

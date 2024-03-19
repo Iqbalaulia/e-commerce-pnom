@@ -1,0 +1,91 @@
+.category {
+  &_detail {
+    padding: 60px 228px 60px 228px;
+    margin-bottom: 180px;
+
+    &_breadcrumbs {
+      font-size: 18px;
+      color: $black-6;
+
+      a {
+        font-size: 18px;
+        color: $black-6;
+        text-decoration: none;
+        margin-right: 10px;
+      }
+
+      .breadcrumbs_active {
+        color: $blue-10;
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+    }
+
+    &_content {
+      margin-top: 40px;
+
+      .title_product {
+        font-size: 28px;
+        font-weight: bold;
+        color: $black-10;
+        text-transform: capitalize;
+      }
+
+      .col-md-2_custom {
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+      }
+
+      .product_box {
+        box-shadow: 0 4px 8px -2px rgba(16, 24, 40, 0.102);
+        height: 334px;
+      }
+
+      .images_product {
+        width: 100%;
+        img {
+          border-radius: 6px 6px 0 0;
+          width: 100%;
+          object-fit: fill;
+          display: block;
+          height: 200px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      .labels_product {
+        margin-top: 10px;
+        font-size: 18px;
+      }
+
+      .rupiah_product {
+        margin-top: 2px;
+        color: $red-6;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      .rating_product {
+        display: flex;
+        align-items: center;
+
+        .star-rating {
+          .star {
+            display: inline-block;
+            color: $yellow-10 !important;
+            font-size: 18px;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+        .total {
+          margin-left: 4px;
+          font-size: 16px;
+          color: $black-7;
+        }
+      }
+    }
+  }
+}
