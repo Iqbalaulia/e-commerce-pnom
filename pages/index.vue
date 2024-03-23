@@ -1,35 +1,51 @@
 <template>
   <div class="home">
     <navbar />
-    <div class="home_banner">
-      <VueSlickCarousel v-bind="settings" v-if="dataBanner.length > 0">
-        <div
-          v-for="(itemBanner, indexBanner) in dataBanner"
-          :key="indexBanner + itemBanner.uuid"
-        >
-          <img class="images-banner" :src="itemBanner.image" alt="banner-1" />
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="home_banner">
+            <VueSlickCarousel v-bind="settings" v-if="dataBanner.length > 0">
+              <div
+                v-for="(itemBanner, indexBanner) in dataBanner"
+                :key="indexBanner + itemBanner.uuid"
+              >
+                <img
+                  class="images-banner"
+                  :src="itemBanner.image"
+                  alt="banner-1"
+                />
+              </div>
+            </VueSlickCarousel>
+          </div>
+          <filter-category />
+          <div class="home_popular">
+            <filter-popular />
+          </div>
+          <div class="home_banner">
+            <img
+              class="images-banner"
+              src="~/assets/images/banner/banner.png"
+              alt="banner-1"
+            />
+          </div>
+          <div class="home_new_product">
+            <filter-new-product />
+          </div>
+          <div class="home_rekomendasi">
+            <filter-recomanded :limit="4" :slice="4" />
+          </div>
+          <div class="home_banner">
+            <img
+              class="images-banner"
+              src="~/assets/images/banner/banner.png"
+              alt="banner-1"
+            />
+          </div>
+          <filter-article />
         </div>
-      </VueSlickCarousel>
+      </div>
     </div>
-    <filter-category />
-    <filter-popular />
-    <div class="home_banner">
-      <img
-        class="images-banner"
-        src="~/assets/images/banner/banner.png"
-        alt="banner-1"
-      />
-    </div>
-    <filter-new-product />
-    <filter-recomanded />
-    <div class="home_banner">
-      <img
-        class="images-banner"
-        src="~/assets/images/banner/banner.png"
-        alt="banner-1"
-      />
-    </div>
-    <filter-article />
     <footer-ecommerce />
   </div>
 </template>

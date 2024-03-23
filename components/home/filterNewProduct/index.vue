@@ -14,7 +14,8 @@
       <b-row>
         <b-col
           md="3"
-          v-for="(itemProduct, indexProduct) in dataNewProduct.slice(0, 4)"
+          class="mb-5"
+          v-for="(itemProduct, indexProduct) in dataNewProduct.slice(0, slice)"
           :key="indexProduct + itemProduct.uuid"
         >
           <NuxtLink :to="`/p/${itemProduct.slug}`" class="section_content">
@@ -51,6 +52,10 @@ import { crudMethods } from "~/store/helpers";
 
 export default {
   name: "FilterNewProduct",
+  props: {
+    limit: Number,
+    slice: Number,
+  },
   data() {
     return {
       dataNewProduct: [],
@@ -64,7 +69,7 @@ export default {
     async getListNewProduct() {
       try {
         let response = await this.getData({
-          url: `/v1.0/product/latest`,
+          url: `/v1.0/product/latest?pageSize=${this.limit}`,
         });
         this.dataNewProduct = response?.data?.data;
       } catch (error) {

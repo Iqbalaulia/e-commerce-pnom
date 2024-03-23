@@ -1,7 +1,7 @@
 export default (context, inject) => {
   const substring = (description, number) => {
     let dots = "";
-    if (description.length > 80)
+    if (description.length > number)
       dots = description.substring(0, number) + "....";
     else dots = description;
     return dots;

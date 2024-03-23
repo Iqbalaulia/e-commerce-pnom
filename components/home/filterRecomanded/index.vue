@@ -14,9 +14,10 @@
       <b-row>
         <b-col
           md="3"
+          class="mb-5"
           v-for="(
             itemRecommendation, indexRecommendation
-          ) in dataProductRecomended.slice(0, 4)"
+          ) in dataProductRecomended.slice(0, slice)"
           :key="indexRecommendation + itemRecommendation.uuid"
         >
           <a href="#" class="section_content">
@@ -26,7 +27,7 @@
               alt="category-1"
             />
             <div class="section_content_title">
-              {{ $substring(itemRecommendation.name, 80) }}
+              {{ $substring(itemRecommendation.name, 60) }}
             </div>
             <div class="section_content_rupiah">
               {{ itemRecommendation.price }}
@@ -55,6 +56,10 @@ import { crudMethods } from "~/store/helpers";
 
 export default {
   name: "FilterRecomanded",
+  props: {
+    limit: Number,
+    slice: Number,
+  },
   data() {
     return {
       dataProductRecomended: [],
@@ -69,7 +74,7 @@ export default {
     async getListCategory() {
       try {
         let response = await this.getData({
-          url: `/v1.0/product/recommendation`,
+          url: `/v1.0/product/recommendation?pageSize=${this.limit}`,
         });
         this.dataProductRecomended = response?.data?.data;
       } catch (error) {

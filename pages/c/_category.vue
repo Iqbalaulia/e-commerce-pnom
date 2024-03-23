@@ -43,6 +43,12 @@
           </div>
         </div>
       </div>
+      <div class="mt-5">
+        <filter-recomanded :limit="8" />
+      </div>
+      <div class="mt-5">
+        <filter-new-product :limit="8" />
+      </div>
     </div>
     <footer-ecommerce />
   </div>
