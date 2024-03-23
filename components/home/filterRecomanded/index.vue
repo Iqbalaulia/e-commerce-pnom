@@ -20,7 +20,7 @@
           ) in dataProductRecomended.slice(0, slice)"
           :key="indexRecommendation + itemRecommendation.uuid"
         >
-          <a href="#" class="section_content">
+          <nuxt-link :to="`/p/${itemRecommendation.slug}`" class="section_content">
             <img
               class="images-recomanded"
               :src="itemRecommendation.imageCover"
@@ -44,7 +44,7 @@
               </div>
               <div class="total">{{ itemRecommendation.sold }} Terjual</div>
             </div>
-          </a>
+          </nuxt-link>
         </b-col>
       </b-row>
     </div>

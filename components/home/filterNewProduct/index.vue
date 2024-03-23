@@ -5,8 +5,8 @@
         <div class="devider"></div>
         <label for="">produk terbaru</label>
       </div>
-      <div class="another-link">
-        <a href="#"> lihat lainnya </a>
+      <div class="another-link" v-if="$route.name !== 'p'">
+        <NuxtLink :to="`/p`"> lihat lainnya </NuxtLink>
       </div>
     </div>
 

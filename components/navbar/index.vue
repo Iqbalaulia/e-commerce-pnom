@@ -82,7 +82,7 @@
             <b-navbar-nav>
               <b-nav-item href="#"> Home </b-nav-item>
               <b-nav-item href="#"> Tentang Kami </b-nav-item>
-              <b-nav-item href="#"> Kategori </b-nav-item>
+              <b-nav-item href="/c"> Kategori </b-nav-item>
               <b-nav-item href="#"> Kontak </b-nav-item>
               <b-nav-item href="#"> Promo </b-nav-item>
               <b-nav-item href="#"> Reseller </b-nav-item>

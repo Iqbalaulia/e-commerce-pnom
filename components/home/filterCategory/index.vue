@@ -1,11 +1,6 @@
 <template>
   <div class="pnom-filter-category">
-    <div
-      class="pnom-filter-category_title"
-      data-aos="fade-in"
-      data-aos-duration="200"
-      data-aos-easing="ease-in-out"
-    >
+    <div class="pnom-filter-category_title">
       <div class="devider"></div>
       <label for="">cari berdasarkan kategori</label>
     </div>
@@ -15,9 +10,6 @@
         <b-col
           v-for="(itemCategory, indexCategory) in dataCategory"
           :key="indexCategory + itemCategory.uuid"
-          :data-aos-duration="indexCategory + 200"
-          data-aos="fade-in"
-          data-aos-easing="ease-in-out"
           class="mb-4"
           sm="2"
         >

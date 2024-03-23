@@ -1,58 +1,62 @@
 [
   {
+    "name": "c",
+    "path": "/c",
+    "component": "C:\\\\Users\\\\miqba\\\\Documents\\\\Project\\\\Vue\\\\e-commerce-pnom\\\\pages\\\\c\\\\index.vue",
+    "chunkName": "pages/c/index"
+  },
+  {
     "name": "cart",
     "path": "/cart",
     "component": "C:\\\\Users\\\\miqba\\\\Documents\\\\Project\\\\Vue\\\\e-commerce-pnom\\\\pages\\\\cart\\\\index.vue",
-    "chunkName": "pages/cart/index",
-    "_name": "_45dbe260"
+    "chunkName": "pages/cart/index"
   },
   {
     "name": "checkout",
     "path": "/checkout",
     "component": "C:\\\\Users\\\\miqba\\\\Documents\\\\Project\\\\Vue\\\\e-commerce-pnom\\\\pages\\\\checkout\\\\index.vue",
-    "chunkName": "pages/checkout/index",
-    "_name": "_3ee3217a"
+    "chunkName": "pages/checkout/index"
   },
   {
     "name": "daftar",
     "path": "/daftar",
     "component": "C:\\\\Users\\\\miqba\\\\Documents\\\\Project\\\\Vue\\\\e-commerce-pnom\\\\pages\\\\daftar\\\\index.vue",
-    "chunkName": "pages/daftar/index",
-    "_name": "_941649f8"
+    "chunkName": "pages/daftar/index"
   },
   {
     "name": "login",
     "path": "/login",
     "component": "C:\\\\Users\\\\miqba\\\\Documents\\\\Project\\\\Vue\\\\e-commerce-pnom\\\\pages\\\\login\\\\index.vue",
-    "chunkName": "pages/login/index",
-    "_name": "_5470540b"
+    "chunkName": "pages/login/index"
+  },
+  {
+    "name": "p",
+    "path": "/p",
+    "component": "C:\\\\Users\\\\miqba\\\\Documents\\\\Project\\\\Vue\\\\e-commerce-pnom\\\\pages\\\\p\\\\index.vue",
+    "chunkName": "pages/p/index"
   },
   {
     "name": "user-account",
     "path": "/user/account",
     "component": "C:\\\\Users\\\\miqba\\\\Documents\\\\Project\\\\Vue\\\\e-commerce-pnom\\\\pages\\\\user\\\\account\\\\index.vue",
-    "chunkName": "pages/user/account/index",
-    "_name": "_33559092"
+    "chunkName": "pages/user/account/index"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\miqba\\\\Documents\\\\Project\\\\Vue\\\\e-commerce-pnom\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_c8d65500"
+    "chunkName": "pages/index"
   },
   {
     "name": "c-category",
-    "path": "/c/:category?",
+    "path": "/c/:category",
     "component": "C:\\\\Users\\\\miqba\\\\Documents\\\\Project\\\\Vue\\\\e-commerce-pnom\\\\pages\\\\c\\\\_category.vue",
-    "chunkName": "pages/c/_category",
-    "_name": "_6400645c"
+    "chunkName": "pages/c/_category"
   },
   {
     "name": "p-product",
-    "path": "/p/:product?",
+    "path": "/p/:product",
     "component": "C:\\\\Users\\\\miqba\\\\Documents\\\\Project\\\\Vue\\\\e-commerce-pnom\\\\pages\\\\p\\\\_product.vue",
-    "chunkName": "pages/p/_product",
-    "_name": "_530abe64"
+    "chunkName": "pages/p/_product"
   }
 ]

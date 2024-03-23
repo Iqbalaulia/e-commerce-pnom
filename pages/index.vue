@@ -30,7 +30,7 @@
             />
           </div>
           <div class="home_new_product">
-            <filter-new-product />
+            <filter-new-product :limit="4" :slice="4" />
           </div>
           <div class="home_rekomendasi">
             <filter-recomanded :limit="4" :slice="4" />
