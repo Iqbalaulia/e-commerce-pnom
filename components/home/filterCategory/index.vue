@@ -22,7 +22,7 @@
           sm="2"
         >
           <NuxtLink :to="`/c/${itemCategory?.slug}`" class="section_content">
-            <img
+            <b-img-lazy
               class="images-filter"
               :src="itemCategory.imageThumb"
               :alt="`category-${itemCategory.slug}`"

@@ -24,7 +24,7 @@
               :to="`/c/${itemCategoryData.slug}`"
             >
               <div class="images_product">
-                <img
+                <b-img-lazy
                   :src="itemCategoryData.image"
                   :alt="itemCategoryData.name"
                 />

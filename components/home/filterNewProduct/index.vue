@@ -27,7 +27,7 @@
           :key="indexProduct + itemProduct.uuid"
         >
           <NuxtLink :to="`/p/${itemProduct.slug}`" class="section_content">
-            <img
+            <b-img-lazy
               class="images-new-product"
               :src="itemProduct.imageCover"
               alt="category-1"

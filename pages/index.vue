@@ -12,7 +12,7 @@
                   v-for="(itemBanner, indexBanner) in dataBanner"
                   :key="indexBanner + itemBanner.uuid"
                 >
-                  <img
+                  <b-img-lazy
                     class="images-banner"
                     :src="itemBanner.image"
                     alt="banner-1"

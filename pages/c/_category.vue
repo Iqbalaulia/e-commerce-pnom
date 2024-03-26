@@ -24,7 +24,7 @@
               :key="indexProduct"
             >
               <div class="images_product">
-                <img :src="itemProduct.imageCover" :alt="itemProduct.name" />
+                <b-img-lazy :src="itemProduct.imageCover" :alt="itemProduct.name" />
               </div>
               <div class="labels_product">
                 {{ $substring_40(itemProduct.name, 36) }}

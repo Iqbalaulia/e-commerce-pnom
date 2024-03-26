@@ -32,7 +32,7 @@
             :to="`/p/${itemRecommendation.slug}`"
             class="section_content"
           >
-            <img
+            <b-img-lazy
               class="images-recomanded"
               :src="itemRecommendation.imageCover"
               alt="category-1"

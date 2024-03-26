@@ -8,6 +8,14 @@
       <div class="product_detail_content">
         <label for="" class="title_product">Produk</label>
         <div class="product">
+          <skeleton-list
+            v-if="loading"
+            :loading="loading"
+            :looping="6"
+            :md="2"
+            width="100%"
+            height="220px"
+          />
           <div class="row p-3" v-if="dataCategory && dataCategory.length > 0">
             <nuxt-link
               class="product_box col-md-2_custom pl-2 pr-2 mb-5"
@@ -16,7 +24,11 @@
               :to="`/p/${itemProduct.slug}`"
             >
               <div class="images_product">
-                <img :src="itemProduct.imageCover" :alt="itemProduct.name" />
+                <b-img-lazy
+                  :src="itemProduct.imageCover"
+                  :alt="itemProduct.name"
+                  v-bind="lazyImages"
+                />
               </div>
               <div class="labels_product">
                 {{ $substring_40(itemProduct.name, 36) }}
@@ -38,7 +50,10 @@
               </div>
             </nuxt-link>
           </div>
-          <div class="d-flex align-items-center justify-content-center" v-else>
+          <div
+            class="d-flex align-items-center justify-content-center"
+            v-if="!loading && dataCategory.length <= 0"
+          >
             <empty-state-list />
           </div>
         </div>
@@ -64,6 +79,16 @@ export default {
   data() {
     return {
       dataCategory: [],
+      loading: true,
+      lazyImages: {
+        center: true,
+        fluidGrow: true,
+        blank: true,
+        blankColor: "#bbb",
+        width: 600,
+        height: 400,
+        class: "my-5",
+      },
     };
   },
   mounted() {
@@ -73,6 +98,8 @@ export default {
     ...crudMethods,
     async getCategoryData() {
       try {
+        this.loading = true;
+
         let params = {
           pageSize: 20,
           pageNum: 1,
@@ -83,6 +110,8 @@ export default {
         this.dataCategory = response?.data?.data;
       } catch (error) {
         console.error(JSON.stringify(error));
+      } finally {
+        this.loading = false;
       }
     },
   },
