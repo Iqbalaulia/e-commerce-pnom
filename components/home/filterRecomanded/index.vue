@@ -11,7 +11,15 @@
     </div>
 
     <div class="pnom-filter-recomanded_content">
-      <b-row>
+      <skeleton-list
+        v-if="loading"
+        :loading="loading"
+        :looping="4"
+        :md="3"
+        width="100%"
+        height="380px"
+      />
+      <b-row v-else>
         <b-col
           md="3"
           class="mb-5"
@@ -20,7 +28,10 @@
           ) in dataProductRecomended.slice(0, slice)"
           :key="indexRecommendation + itemRecommendation.uuid"
         >
-          <nuxt-link :to="`/p/${itemRecommendation.slug}`" class="section_content">
+          <nuxt-link
+            :to="`/p/${itemRecommendation.slug}`"
+            class="section_content"
+          >
             <img
               class="images-recomanded"
               :src="itemRecommendation.imageCover"
@@ -63,6 +74,7 @@ export default {
   data() {
     return {
       dataProductRecomended: [],
+      loading: true,
     };
   },
   mounted() {
@@ -73,12 +85,15 @@ export default {
 
     async getListCategory() {
       try {
+        this.loading = true;
         let response = await this.getData({
           url: `/v1.0/product/recommendation?pageSize=${this.limit}`,
         });
         this.dataProductRecomended = response?.data?.data;
       } catch (error) {
         console.error(JSON.stringify(error));
+      } finally {
+        this.loading = false;
       }
     },
   },

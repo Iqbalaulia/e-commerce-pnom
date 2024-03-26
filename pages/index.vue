@@ -5,18 +5,21 @@
       <div class="row">
         <div class="col-md-12">
           <div class="home_banner">
-            <VueSlickCarousel v-bind="settings" v-if="dataBanner.length > 0">
-              <div
-                v-for="(itemBanner, indexBanner) in dataBanner"
-                :key="indexBanner + itemBanner.uuid"
-              >
-                <img
-                  class="images-banner"
-                  :src="itemBanner.image"
-                  alt="banner-1"
-                />
-              </div>
-            </VueSlickCarousel>
+            <skeleton-banner class="mt-5" v-if="loading" :loading="loading" />
+            <div v-else>
+              <VueSlickCarousel v-bind="settings" v-if="dataBanner.length > 0">
+                <div
+                  v-for="(itemBanner, indexBanner) in dataBanner"
+                  :key="indexBanner + itemBanner.uuid"
+                >
+                  <img
+                    class="images-banner"
+                    :src="itemBanner.image"
+                    alt="banner-1"
+                  />
+                </div>
+              </VueSlickCarousel>
+            </div>
           </div>
           <filter-category />
           <div class="home_popular">
@@ -63,7 +66,7 @@ export default {
     return {
       settings: carouselBanner,
       dataBanner: [],
-      loading: false,
+      loading: true,
     };
   },
   components: { VueSlickCarousel },
@@ -80,10 +83,9 @@ export default {
           url: `/v1.0/banner`,
         });
         this.dataBanner = response?.data?.data;
+        this.loading = false;
       } catch (error) {
         console.error(JSON.stringify(error));
-      } finally {
-        this.loading = false;
       }
     },
   },

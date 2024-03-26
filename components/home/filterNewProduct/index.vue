@@ -11,7 +11,15 @@
     </div>
 
     <div class="pnom-filter-new-product_content">
-      <b-row>
+      <skeleton-list
+        v-if="loading"
+        :loading="loading"
+        :looping="4"
+        :md="3"
+        width="100%"
+        height="380px"
+      />
+      <b-row v-else>
         <b-col
           md="3"
           class="mb-5"
@@ -59,6 +67,7 @@ export default {
   data() {
     return {
       dataNewProduct: [],
+      loading: true,
     };
   },
   mounted() {
@@ -68,12 +77,16 @@ export default {
     ...crudMethods,
     async getListNewProduct() {
       try {
+        this.loading = true;
+
         let response = await this.getData({
           url: `/v1.0/product/latest?pageSize=${this.limit}`,
         });
         this.dataNewProduct = response?.data?.data;
       } catch (error) {
         console.error(JSON.stringify(error));
+      } finally {
+        this.loading = false;
       }
     },
   },

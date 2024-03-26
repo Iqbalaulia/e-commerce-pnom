@@ -6,7 +6,15 @@
     </div>
 
     <div class="pnom-filter-category_content">
-      <b-row>
+      <skeleton-list
+        v-if="loading"
+        :loading="loading"
+        :looping="6"
+        :md="2"
+        width="240px"
+        height="230px"
+      />
+      <b-row v-else>
         <b-col
           v-for="(itemCategory, indexCategory) in dataCategory"
           :key="indexCategory + itemCategory.uuid"
@@ -39,6 +47,7 @@ export default {
     return {
       mockDataFilterCategory: mockDataFilterCategory,
       dataCategory: [],
+      loading: true,
     };
   },
   mounted() {
@@ -48,12 +57,15 @@ export default {
     ...crudMethods,
     async getListCategory() {
       try {
+        this.loading = true;
         let response = await this.getData({
           url: `/v1.0/category`,
         });
         this.dataCategory = response?.data?.data;
       } catch (error) {
         console.error(JSON.stringify(error));
+      } finally {
+        this.loading = false;
       }
     },
   },

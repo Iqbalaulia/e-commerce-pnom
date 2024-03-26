@@ -20,6 +20,9 @@ import MyOrderComponent from "~/components/user/order/index.vue";
 import CustomerReviewComponent from "~/components/reviewCustomer/index.vue";
 import EmptyStateList from "~/components/emptyState/EmptyStateList.vue";
 
+import SkeletonBanner from "~/components/skeleton/skeleton-banner.vue";
+import SkeletonList from "~/components/skeleton/skeleton-list.vue";
+
 Vue.component("Tutorial", Tutorial);
 Vue.component("header-login", Header);
 Vue.component("footer-login", FooterLogin);
@@ -41,3 +44,6 @@ Vue.component("my-order-component", MyOrderComponent);
 
 Vue.component("customer-review-component", CustomerReviewComponent);
 Vue.component("empty-state-list", EmptyStateList);
+
+Vue.component("skeleton-banner", SkeletonBanner);
+Vue.component("skeleton-list", SkeletonList);
